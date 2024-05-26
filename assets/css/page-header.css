@@ -1,0 +1,127 @@
+/* page header */
+@media (min-width: 992px) {
+   .page-header .nav-link {
+      margin-right: .5em;
+   }
+
+   .page-header .nav-link::before {
+      content: '|';
+      margin-right: .5em;
+      color: var(--color-dark-900);
+   }
+
+   .page-header .nav-item:first-child .nav-link::before {
+      display: none;
+   }
+}
+
+
+
+/* navtop */
+.navtop>ul.nav {
+   padding-top: 1em;
+   padding-bottom: 1em;
+   display: grid;
+   grid-template-columns: 1fr auto 1fr;
+   align-items: center;
+   column-gap: 1.5em;
+}
+
+.navtop>ul.nav>.nav-item:last-child {
+   text-align: right;
+}
+
+.navtop .nav-corner {
+   display: none;
+}
+
+@media (min-width: 992px) {
+   .navtop>ul.nav {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      grid-template-columns: auto 1fr;
+   }
+
+   .navtop>ul.nav>.nav-item:first-child,
+   .navtop>ul.nav>.nav-item:last-child>button {
+      display: none;
+   }
+
+   .navtop .nav-corner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+   }
+}
+
+
+
+/* navbrand */
+.navbrand img {
+   width: auto;
+   height: 24px;
+}
+
+@media (min-width: 992px) {
+   .navbrand img {
+      height: 32px;
+   }
+}
+
+
+
+/* sidebar */
+#sidebar .nav {
+   font-family: 'HelveticaNeue Medium';
+   text-transform: uppercase;
+}
+
+@media (max-width: 991.98px) {
+   #sidebar .offcanvas-body {
+      height: 100%;
+      display: grid;
+      grid-template-rows: 1fr auto;
+   }
+
+   #sidebar .offcanvas-body>* {
+      padding: 1em;
+      position: relative;
+   }
+
+   #sidebar .offcanvas-body>*::after {
+      content: '';
+      width: calc(100% - 2em);
+      border-top: solid 1px var(--color-dark-900);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   #sidebar .offcanvas-body>*:first-child::after {
+      display: none;
+   }
+
+   #sidebar .nav-link {
+      display: block;
+      padding-top: .5em;
+      padding-bottom: .5em;
+   }
+
+   #sidebar .offcanvas-body>.container-lg {
+      overflow-y: auto;
+   }
+}
+
+@media (min-width: 992px) {
+   #sidebar .nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+   }
+
+   #sidebar .nav-corner {
+      display: none;
+   }
+}
