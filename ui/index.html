@@ -5,8 +5,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>INDRACO &bull; Beranda</title>
-   <link rel="shortcut icon" href="../assets/img/logo/icon-indraco.svg" type="image/x-icon">
-   <!-- <link rel="stylesheet" href="../vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css"> -->
+   <link rel="shortcut icon" href="../assets/img/logo/icon-indraco.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="../vendor/fontawesome-free-6.5.1-web/css/all.min.css">
    <link rel="stylesheet" href="../assets/fonts/HelveticaNeue/HelveticaNeue.css">
    <link rel="stylesheet" href="../assets/css/styles.css">
@@ -23,196 +23,113 @@
 <body>
 
    <header class="page-header">
-      <div class="navtop container">
-         <ul class="nav">
-            <li class="nav-item">
-               <button data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-                  <i class="fas fa-ellipsis-h"></i>
-               </button>
-            </li>
-            <li class="nav-item">
-               <h1 class="navbrand">
-                  <a href="index.html">
-                     <img src="../assets/img/logo/logo-indraco.png" alt="INDRACO">
-                  </a>
-               </h1>
-            </li>
-            <li class="nav-item">
-               <button>
-                  <i class="fas fa-search"></i>
-               </button>
-               <script src="components/nav-corner.js"></script>
-            </li>
-         </ul>
-      </div>
-      <div class="offcanvas-lg offcanvas-start" id="sidebar">
-         <div class="offcanvas-body">
-            <div class="container-lg">
-               <ul class="nav">
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">tentang kami</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">produk</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">bisnis</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">toko resmi</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">berita & acara</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">brosur</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">karir</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">kontak</a>
-                  </li>
-               </ul>
+      <div class="nav-bar bg-white">
+         <div class="container">
+            <ul class="nav-header list-unstyled m-0">
+               <li class="d-lg-none">
+                  <button class="bg-transparent border-0 p-0" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                     <i class="fas fa-bars fa-xl"></i>
+                  </button>
+               </li>
+               <li>
+                  <h1 class="navbrand m-0">
+                     <a href="index.html" class="d-grid">
+                        <img src="../assets/img/logo/logo-indraco.png" width="auto" alt="INDRACO">
+                     </a>
+                  </h1>
+               </li>
+               <li class="text-end d-lg-none">
+                  <button class="bg-transparent border-0 p-0">
+                     <i class="fas fa-search fa-xl"></i>
+                  </button>
+               </li>
+               <li class="d-none d-lg-block ms-lg-auto">
+                  <script src="components/nav-corner.js"></script>
+               </li>
+            </ul>
+            <div class="offcanvas-lg offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="sidebar">
+               <div class="offcanvas-header position-absolute top-0 end-0 p-2 z-1">
+                  <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                     <i class="fas fa-close fa-xl"></i>
+                  </button>
+               </div>
+               <div class="offcanvas-body d-lg-flex align-items-center justify-content-between">
+                  <ul class="list-unstyled m-0 text-capitalize d-lg-flex flex-wrap align-items-center nav-list">
+                     <li><a href="#" class="fs-5">tentang kami</a></li>
+                     <li class="dropdown">
+                        <a href="#" class="fs-5 dropdown-toggle" data-bs-toggle="dropdown">produk</a>
+                        <ul class="dropdown-menu">
+                           <li class="dropdown">
+                              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">produk
+                                 konsumen</a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="#">supresso</a></li>
+                                 <li><a class="dropdown-item" href="#">balicafe</a></li>
+                                 <li><a class="dropdown-item" href="#">ucafe</a></li>
+                                 <li><a class="dropdown-item" href="#">rasa sayang</a></li>
+                                 <li><a class="dropdown-item" href="#">tugu buaya</a></li>
+                                 <li><a class="dropdown-item" href="#">uang emas</a></li>
+                                 <li><a class="dropdown-item" href="#">brochoco</a></li>
+                                 <li><a class="dropdown-item" href="#">jaheku</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropdown">
+                              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">food
+                                 services</a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="#">kopi</a></li>
+                                 <li><a class="dropdown-item" href="#">krimer</a></li>
+                                 <li><a class="dropdown-item" href="#">teh</a></li>
+                                 <li><a class="dropdown-item" href="#">jahe</a></li>
+                                 <li><a class="dropdown-item" href="#">cokelat</a></li>
+                                 <li><a class="dropdown-item" href="#">gula</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropdown">
+                              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">mesin &
+                                 perlatan</a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="#">mesin kopi</a></li>
+                                 <li><a class="dropdown-item" href="#">dispenser</a></li>
+                                 <li><a class="dropdown-item" href="#">aksesori</a></li>
+                                 <li><a class="dropdown-item" href="#">pendaftaran garansi</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li><a href="#" class="fs-5">bisnis</a></li>
+                     <li><a href="#" class="fs-5">toko resmi</a></li>
+                     <li><a href="#" class="fs-5">berita & acara</a></li>
+                     <li><a href="#" class="fs-5">brosur</a></li>
+                     <li><a href="#" class="fs-5">karir</a></li>
+                     <li><a href="#" class="fs-5">kontak</a></li>
+                  </ul>
+                  <div class="d-lg-none">
+                     <script src="components/nav-corner.js"></script>
+                  </div>
+                  <button class="bg-transparent border-0 p-0 d-none d-lg-block">
+                     <i class="fas fa-search fa-xl"></i>
+                  </button>
+               </div>
             </div>
-            <script src="components/nav-corner.js"></script>
          </div>
       </div>
    </header>
-   <main class="page-wrapper">
-      <section class="page-section">
+
+   <main class="page-content">
+      <section class="page-section" style="height: 110vh;">
          <div class="container">
             <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officia veniam quos possimus voluptates,
-               quae ipsa, sed nesciunt, perspiciatis sit similique consequuntur pariatur vitae obcaecati? Illum alias
-               doloribus ut quibusdam!
-            </p>
-         </div>
-      </section>
-      <section class="page-section">
-         <div class="container">
-            <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officia veniam quos possimus voluptates,
-               quae ipsa, sed nesciunt, perspiciatis sit similique consequuntur pariatur vitae obcaecati? Illum alias
-               doloribus ut quibusdam!
-            </p>
-         </div>
-      </section>
-      <section class="page-section">
-         <div class="container">
-            <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officia veniam quos possimus voluptates,
-               quae ipsa, sed nesciunt, perspiciatis sit similique consequuntur pariatur vitae obcaecati? Illum alias
-               doloribus ut quibusdam!
-            </p>
-         </div>
-      </section>
-      <section class="page-section">
-         <div class="container">
-            <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officia veniam quos possimus voluptates,
-               quae ipsa, sed nesciunt, perspiciatis sit similique consequuntur pariatur vitae obcaecati? Illum alias
-               doloribus ut quibusdam!
-            </p>
-         </div>
-      </section>
-      <section class="page-section">
-         <div class="container">
-            <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officia veniam quos possimus voluptates,
-               quae ipsa, sed nesciunt, perspiciatis sit similique consequuntur pariatur vitae obcaecati? Illum alias
-               doloribus ut quibusdam!
-            </p>
-         </div>
-      </section>
-      <section class="page-section">
-         <div class="container">
-            <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officia veniam quos possimus voluptates,
-               quae ipsa, sed nesciunt, perspiciatis sit similique consequuntur pariatur vitae obcaecati? Illum alias
-               doloribus ut quibusdam!
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sint itaque dolorum illum beatae magni ut
+               possimus sequi voluptatum sapiente, deleniti amet facilis reiciendis, nostrum optio obcaecati similique
+               odit labore.
             </p>
          </div>
       </section>
    </main>
+
    <footer class="page-footer">
-      <div class="footbar">
-         <header class="container">
-            <div class="card">
-               <h1 class="card-title">
-                  <img src="../assets/img/logo/logo-indraco-grey.png" width="auto" height="24" alt="INDRACO">
-               </h1>
-               <div class="card-text">
-                  <q><small>Indraco Roasting Fine Exquisite Coffee Since 1971.</small></q>
-               </div>
-            </div>
-            <div class="card">
-               <h5 class="card-title">
-                  <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#foot-products">
-                     laman produk
-                  </button>
-               </h5>
-               <div class="collapse collapse-lg" id="foot-products">
-                  <div class="card-text">
-                     <nav class="nav chevron-right">
-                        <a href="#" class="nav-link">supressso</a>
-                        <a href="#" class="nav-link">balicafe</a>
-                        <a href="#" class="nav-link">ucafe</a>
-                        <a href="#" class="nav-link">rasa sayang</a>
-                        <a href="#" class="nav-link">tugu buaya</a>
-                        <a href="#" class="nav-link">uang emas</a>
-                        <a href="#" class="nav-link">brochoco</a>
-                        <a href="#" class="nav-link">jaheku</a>
-                     </nav>
-                  </div>
-               </div>
-            </div>
-            <div class="card">
-               <h5 class="card-title">
-                  <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#foot-address">
-                     hubungi kami
-                  </button>
-               </h5>
-               <div class="collapse collapse-lg" id="foot-address">
-                  <div class="card-text">
-                     <address>
-                        <p style="margin-bottom: 1em;">
-                           <a href="#" target="_blank">
-                              Jl. Semeru Industri 1 No. 133-135 Bambe, Driyorejo, Gresik 61177 - Indonesia
-                           </a>
-                        </p>
-                        <p>
-                           <b>T</b>.
-                           <a href="#" target="_blank">+62 31 766 8777</a>,
-                           <a href="#" target="_blank">766 7388</a>
-                           <br>
-                           <b>F</b>.
-                           <a href="#" target="_blank">+62 31 766 9590</a>
-                           <br>
-                           <b>E</b>.
-                           <a href="#" target="_blank">info@indraco.com</a>
-                        </p>
-                     </address>
-                  </div>
-               </div>
-            </div>
-         </header>
-         <footer>
-            <div class="container">
-               <nav class="nav nav-privacy">
-                  <a href="#" target="_blank" class="nav-link">kebijakan privasi</a>
-                  <a href="#" target="_blank" class="nav-link">ketentuan penggunaan</a>
-                  <a href="#" target="_blank" class="nav-link">informasi keamanan data</a>
-                  <a href="#" target="_blank" class="nav-link">bantuan?</a>
-               </nav>
-               <div class="copyright">
-                  Hak Cipta &copy; 2019 -
-                  <script>document.write(new Date().getFullYear())</script>
-                  INDRACO. Seluruh hak dilindungi undang-undang.
-               </div>
-            </div>
-         </footer>
-      </div>
+      <script src="components/footbar.js"></script>
    </footer>
 
    <script src="../vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
