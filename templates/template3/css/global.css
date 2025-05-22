@@ -45,10 +45,10 @@
    pointer-events: none;
 }
 
-.dropdown {
+/* .dropdown {
    @media (min-width: 992px) {
       &:hover>.dropdown-menu {
          display: block;
       }
    }
-}
+} */

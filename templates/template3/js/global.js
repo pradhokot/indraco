@@ -33,17 +33,50 @@ $(document).ready(function () {
    if ($(window).width() < 992) {
       // mobile preview
       $('.dropdown>.nav-link').removeAttr('href');
+
+      // Ubah event hover menjadi click untuk dropdown di mobile
+      $('.nav-item.dropdown').off('mouseenter mouseleave').on('click', function (e) {
+         // Toggle slide pada dropdown-menu
+         var $menu = $(this).find('.dropdown-menu');
+         if ($menu.is(':visible')) {
+            $menu.stop(true, true).slideUp(200);
+         } else {
+            $menu.stop(true, true).slideDown(250);
+         }
+         // Agar tidak bubble ke parent (misal ada nested dropdown)
+         e.stopPropagation();
+         // Optional: tutup dropdown lain
+         $(this).siblings('.nav-item.dropdown').find('.dropdown-menu').slideUp(200);
+      });
    }
    else {
       // desktop preview
-      $('.dropdown>.nav-link').removeAttr('data-bs-toggle data-bs-target');
+      // change trigger nav-tabs from click to hover
+      document.querySelectorAll('.nav-pills>.nav-item>.nav-link>span').forEach(function (everyitem) {
+         var tabTrigger = new bootstrap.Tab(everyitem)
+         everyitem.addEventListener('mouseenter', function () {
+            tabTrigger.show();
+         });
+      });
 
-      $('.dropdown').mouseenter(function() {
-         $('.navbar').addClass('show-dropdown');
-      });
-      $('.navbar').mouseleave(function() {
-         $('.navbar').removeClass('show-dropdown');
-      });
+      // add active class on first navbar tab menu
+      $('.nav-pills>.nav-item:first-of-type>.nav-link>span').addClass('active');
+      $('.tab-content>.tab-pane:first-of-type').addClass('active show');
+
+
+      // Untuk dropdown di navbar
+      $('.nav-item.dropdown').hover(
+         function () {
+            // Saat mouse masuk, slide down menu
+            $(this).find('.dropdown-menu').stop(true, true).slideDown(250);
+            $('.navbar').addClass('show-dropdown');
+         },
+         function () {
+            // Saat mouse keluar, slide up menu
+            $(this).find('.dropdown-menu').stop(true, true).slideUp(200);
+            $('.navbar').removeClass('show-dropdown');
+         }
+      );
    }
 
 
