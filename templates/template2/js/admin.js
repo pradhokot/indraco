@@ -1,0 +1,95 @@
+$(document).ready(function () {
+   $('.sidebar').height($(window).height());
+
+   // refresh page
+   var windowWidth = $(window).width();
+   $(window).resize(function () {
+      if (windowWidth != $(window).width()) {
+         location.reload();
+         return;
+      }
+   });
+
+   // setPadding();
+   $('.page').css('padding-top', $('.navbar').outerHeight());
+
+   // toggle scroll
+   let prevScrollpos = $(window).scrollTop();
+   $(window).on('scroll', function () {
+      $('.navbar').toggleClass('toggle-scroll', prevScrollpos <= $(this).scrollTop());
+      prevScrollpos = $(this).scrollTop();
+   });
+});
+
+
+(() => {
+   'use strict'
+
+   const storedTheme = localStorage.getItem('theme')
+
+   const getPreferredTheme = () => {
+      if (storedTheme) {
+         return storedTheme
+      }
+
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+   }
+
+   const setTheme = function (theme) {
+      if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+         document.documentElement.setAttribute('data-bs-theme', 'dark')
+      } else {
+         document.documentElement.setAttribute('data-bs-theme', theme)
+      }
+   }
+
+   setTheme(getPreferredTheme())
+
+   const showActiveTheme = (theme, focus = false) => {
+      const themeSwitcher = document.querySelector('#bd-theme')
+
+      if (!themeSwitcher) {
+         return
+      }
+
+      const themeSwitcherText = document.querySelector('#bd-theme-text')
+      const activeThemeIcon = document.querySelector('.theme-icon-active i')
+      const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+      const iconOfActiveBtn = btnToActive.querySelector('.theme-icon i').getAttribute('class')
+
+      document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+         element.classList.remove('active')
+         element.setAttribute('aria-pressed', 'false')
+      })
+
+      btnToActive.classList.add('active')
+      btnToActive.setAttribute('aria-pressed', 'true')
+      activeThemeIcon.setAttribute('class', iconOfActiveBtn)
+      const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+      themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+      if (focus) {
+         themeSwitcher.focus()
+      }
+   }
+
+   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      if (storedTheme !== 'light' || storedTheme !== 'dark') {
+         setTheme(getPreferredTheme())
+      }
+   })
+
+   window.addEventListener('DOMContentLoaded', () => {
+      showActiveTheme(getPreferredTheme())
+
+      document.querySelectorAll('[data-bs-theme-value]')
+         .forEach(toggle => {
+            toggle.addEventListener('click', () => {
+               const theme = toggle.getAttribute('data-bs-theme-value')
+               localStorage.setItem('theme', theme)
+               setTheme(theme)
+               showActiveTheme(theme, true)
+            })
+         })
+   })
+})();

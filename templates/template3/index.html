@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>INDRACO &bull; Welcome</title>
+   <link rel="shortcut icon" href="../../asset/img/icon-indraco.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../../asset/vendors/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../../asset/vendors/fontawesome-free-6.7.2-web/css/all.min.css">
+   <link rel="stylesheet" href="../../asset/fonts/HelveticaNeue/HelveticaNeue.css">
+   <link rel="stylesheet" href="css/global.css">
+   <link rel="stylesheet" href="css/navbar.css">
+   <link rel="stylesheet" href="css/landing.css">
+   <script src="../../asset/vendors/jquery-3.7.1.min.js.js"></script>
+   <script src="../../asset/vendors/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+   <style>
+      * {
+         outline: solid 1px green;
+         outline: solid 1px transparent;
+      }
+   </style>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="page">
+         <header class="page-header">
+            <nav class="navbar navbar-expand-lg p-0 d-block fixed-top">
+               <div class="navbar-top container py-3 py-lg-4">
+                  <div class="nav-start d-lg-none">
+                     <button class="btn rounded-0 border-0 shadow-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                        <span class="fas fa-bars"></span>
+                     </button>
+                  </div><!-- end nav start -->
+                  <div class="nav-center">
+                     <h1 class="navbar-logo lh-1 text-reset m-0">
+                        <a href="index.html" class="text-decoration-none d-flex">
+                           <img src="../../asset/img/logo-indraco.png" class="img-default" width="100%" height="auto" alt="">
+                           <img src="../../asset/img/logo-indraco-invert.png" class="img-invert" width="100%" height="auto" alt="">
+                        </a>
+                     </h1>
+                  </div><!-- end nav center -->
+                  <div class="nav-end">
+                     <div class="d-none d-lg-block small">
+                        <script src="layout/submenu.js"></script>
+                     </div>
+                     <div class="d-lg-none">
+                        <script src="layout/trigger-search.js"></script>
+                     </div>
+                  </div><!-- end nav end -->
+               </div><!-- end navbar top -->
+               <div class="navbar-bottom">
+                  <aside id="sidebar" class="offcanvas-lg offcanvas-start container-lg px-0 d-flex align-items-lg-center" z-index="-1">
+                     <div class="offcanvas-header">
+                        <button class="btn-close rounded-0 border-0 shadow-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></button>
+                     </div>
+                     <div class="offcanvas-body flex-grow-1">
+                        <ul class="navbar-nav">
+                           <li class="nav-item">
+                              <a href="#" class="nav-link lh-1 py-lg-1 px-lg-3 text-reset link-hover text-capitalize" id="nav-about">
+                                 <b class="fw-medium">about us</b>
+                              </a>
+                           </li>
+                           <li class="nav-item d-none d-lg-block"><div class="vr h-100"></div></li>
+                           <li class="nav-item dropdown">
+                              <a href="#" data-bs-toggle="dropdown" data-bs-target="#dropdown-products" class="nav-link lh-1 py-lg-1 px-lg-3 text-reset link-hover text-capitalize" id="nav-products">
+                                 <b class="fw-medium">products</b>
+                              </a>
+                              <div class="dropdown-menu rounded-0 border-0" id="dropdown-products" data-bs-parent="#sidebar">
+                                 <div class="container-lg py-2 py-lg-4">
+                                    <header class="d-none d-lg-block">
+                                       <h5><b class="fw-medium">Our Products</b></h5>
+                                       <hr>
+                                    </header>
+                                    <p>
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugit, corrupti consequatur saepe modi perspiciatis dignissimos adipisci dolorum itaque molestias cum harum ratione vitae facilis non in voluptatibus quos magnam?
+                                    </p>
+                                 </div><!-- end container -->
+                              </div>
+                           </li>
+                           <li class="nav-item d-none d-lg-block"><div class="vr h-100"></div></li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link lh-1 py-lg-1 px-lg-3 text-reset link-hover text-capitalize" id="nav-businesses">
+                                 <b class="fw-medium">businesses</b>
+                              </a>
+                           </li>
+                           <li class="nav-item d-none d-lg-block"><div class="vr h-100"></div></li>
+                           <li class="nav-item dropdown">
+                              <a href="#" data-bs-toggle="dropdown" data-bs-target="#dropdown-store" class="nav-link lh-1 py-lg-1 px-lg-3 text-reset link-hover text-capitalize" id="nav-store">
+                                 <b class="fw-medium">official store</b>
+                              </a>
+                              <div class="dropdown-menu rounded-0 border-0" id="dropdown-store" data-bs-parent="#sidebar">
+                                 <div class="container-lg py-2 py-lg-4">
+                                    <header class="d-none d-lg-block">
+                                       <h5><b class="fw-medium">Official Store</b></h5>
+                                       <hr>
+                                    </header>
+                                    <p>
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugit, corrupti consequatur saepe modi perspiciatis dignissimos adipisci dolorum itaque molestias cum harum ratione vitae facilis non in voluptatibus quos magnam?
+                                    </p>
+                                 </div><!-- end container -->
+                              </div>
+                           </li>
+                           <li class="nav-item d-none d-lg-block"><div class="vr h-100"></div></li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link lh-1 py-lg-1 px-lg-3 text-reset link-hover text-capitalize" id="nav-events">
+                                 <b class="fw-medium">events</b>
+                              </a>
+                           </li>
+                           <li class="nav-item d-none d-lg-block"><div class="vr h-100"></div></li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link lh-1 py-lg-1 px-lg-3 text-reset link-hover text-capitalize" id="nav-brochures">
+                                 <b class="fw-medium">brochures</b>
+                              </a>
+                           </li>
+                           <li class="nav-item d-none d-lg-block"><div class="vr h-100"></div></li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link lh-1 py-lg-1 px-lg-3 text-reset link-hover text-capitalize" id="nav-career">
+                                 <b class="fw-medium">career</b>
+                              </a>
+                           </li>
+                           <li class="nav-item d-none d-lg-block"><div class="vr h-100"></div></li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link lh-1 py-lg-1 px-lg-3 text-reset link-hover text-capitalize" id="nav-contact">
+                                 <b class="fw-medium">contact</b>
+                              </a>
+                           </li>
+                           <!-- <li class="nav-item d-none d-lg-block"><div class="vr h-100"></div></li> -->
+                        </ul>
+                     </div>
+                     <div class="offcanvas-header d-block p-lg-0 flex-grow-0 position-relative">
+                        <hr class="position-absolute top-0 translate-middle-y m-0 d-lg-none" style="left: 1rem; right: 1rem;">
+                        <div class="d-lg-none">
+                           <script src="layout/submenu.js"></script>
+                        </div>
+                        <div class="d-none d-lg-block">
+                           <script src="layout/trigger-search.js"></script>
+                        </div>
+                     </div>
+                  </aside><!-- end sidebar -->
+               </div><!-- end navbar bottom -->
+            </nav><!-- end navbar -->
+            <div id="home-banner" class="banner bg-dark-subtle d-flex align-items-center" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent), url(../../asset/img/home-banner-default.jpeg); background-repeat: no-repeat; background-position: center; background-size: cover; background-attachment: fixed;">
+               <div class="caption text-white w-100 py-4" style="background-color: rgba(0, 0, 0, .5);">
+                  <div class="container">
+                     <h2 class="display-5 fw-thin">Innovation & <br> <b class="fw-medium">Future</b></h2>
+                  </div><!-- end container -->
+               </div>
+            </div><!-- end banner -->
+         </header><!-- end page wrapper -->
+         <main class="page-body">
+            <section>
+               <div class="container py-4">
+                  <p>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem placeat vitae cupiditate reprehenderit autem animi aliquid inventore, nesciunt perferendis quasi, aut adipisci numquam eligendi assumenda necessitatibus cum, sed illum.
+                  </p>
+               </div><!-- end container -->
+            </section>
+            <section class="vh-100"></section>
+            <section class="vh-100"></section>
+         </main><!-- end page body -->
+         <footer class="page-footer">
+            <div class="footbar">
+               <div class="container">
+                  <div class="row">
+                     <div class="col">
+                        <p class="text-center">
+                           &copy; <script>document.write(new Date().getFullYear())</script> INDRACO. All rights reserved.
+                        </p>
+                     </div><!-- end col -->
+                  </div><!-- end row -->
+               </div><!-- end container -->
+            </div><!-- end footbar -->
+         </footer><!-- end page footer -->
+      </div><!-- end page -->
+      <div class="cookies"></div><!-- end cookies -->
+      <div class="modal"></div><!-- end modal -->
+   </div><!-- end wrapper -->
+   <script src="js/global.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('.navbar').addClass('invert');
+         // $('#home-banner').css('height', $(window).height());
+         $('.page').addClass('p-0');
+      });
+   </script>
+</body>
+</html>

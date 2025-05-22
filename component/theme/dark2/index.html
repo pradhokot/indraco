@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Halaman Web dengan Pilihan Tema</title>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --header-background: #007bff;
+            --footer-background: #f1f1f1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+            color-scheme: light dark;
+            /* Menyatakan bahwa halaman mendukung tema terang dan gelap */
+        }
+
+        header {
+            background-color: var(--header-background);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        select {
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--footer-background);
+        }
+
+        /* Tema Gelap */
+        .dark {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --header-background: #1e1e1e;
+            --footer-background: #1e1e1e;
+        }
+
+        /* Tema Terang */
+        .light {
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --header-background: #007bff;
+            --footer-background: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Selamat Datang di Halaman Web Saya</h1>
+        <div>
+            <label for="theme-selector">Pilih Tema:</label>
+            <select id="theme-selector">
+                <option value="auto">Otomatis</option>
+                <option value="light">Terang</option>
+                <option value="dark">Gelap</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Tentang Kami</h2>
+            <p>Ini adalah contoh halaman web yang mendukung pilihan tema.</p>
+        </section>
+        <section>
+            <h2>Kontak</h2>
+            <p>Anda dapat menghubungi kami melalui email di contoh@email.com.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hak Cipta Dilindungi</p>
+    </footer>
+    <script>
+        const themeSelector = document.getElementById('theme-selector');
+
+        // Fungsi untuk mengatur tema
+        function setTheme(theme) {
+            document.body.classList.remove('dark', 'light'); // Hapus semua tema sebelumnya
+            if (theme === 'dark') {
+                document.body.classList.add('dark');
+            } else if (theme === 'light') {
+                document.body.classList.add('light');
+            } else {
+                // Otomatis: Cek preferensi tema pengguna
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.body.classList.add(prefersDarkScheme ? 'dark' : 'light');
+            }
+        }
+
+        // Cek preferensi tema pengguna saat halaman dimuat
+        setTheme(themeSelector.value);
+
+        // Tambahkan event listener untuk perubahan tema dari dropdown
+        themeSelector.addEventListener('change', (e) => {
+            setTheme(e.target.value);
+        });
+
+        // Tambahkan event listener untuk perubahan preferensi tema sistem
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (e) => {
+            if (themeSelector.value === 'auto') {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+:root {
+   --background-color: #ffffff;
+   --text-color: #000000;
+   --header-background: #007bff;
+   --footer-background: #f1f1f1;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: var(--background-color);
+   color: var(--text-color);
+   transition: background-color 0.3s, color 0.3s;
+   color-scheme: light dark; /* Menyatakan bahwa halaman mendukung tema terang dan gelap */
+}
+
+header {
+   background-color: var(--header-background);
+   color: white;
+   padding: 20px;
+   text-align: center;
+}
+
+select {
+   margin-top: 10px;
+   padding: 5px;
+}
+
+main {
+   padding: 20px;
+}
+
+footer {
+   text-align: center;
+   padding: 10px;
+   background-color: var(--footer-background);
+}
+
+/* Tema Gelap */
+.dark {
+   --background-color: #121212;
+   --text-color: #ffffff;
+   --header-background: #1e1e1e;
+   --footer-background: #1e1e1e;
+}
+
+/* Tema Terang */
+.light {
+   --background-color: #ffffff;
+   --text-color: #000000;
+   --header-background: #007bff;
+   --footer-background: #f1f1f1;
+}

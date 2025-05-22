@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="layout/head.js"></script>	
+	<title>INDRACO &bull; Home</title>
+	<style>
+		* {
+			outline: solid 1px green;
+			outline: solid 1px transparent;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="page">
+			<header class="page-header">
+
+				<nav class="nav" id="navtop">
+					<div class="container">
+						<div class="nav-start">
+							<button class="nav-link" id="toggler-menu" data-bs-toggle="offcanvas" data-bs-target="#menu">
+								<i class="fas fa-bars"></i>
+							</button>
+						</div><!-- end nav start -->
+						<div class="nav-center">
+							<h1>
+								<a href="index.html" class="navbrand">
+									<img src="../../asset/img/logo-indraco.png" width="100%" height="auto" alt="INDRACO">
+								</a>
+							</h1>
+						</div><!-- end nav center -->
+						<div class="nav-end">
+							<div class="float-end">
+								<div class="d-none d-lg-block">
+									<script src="layout/navtop-submenu.js"></script>
+								</div>
+								<div class="d-block d-lg-none">
+									<script src="layout/toggler-search.js"></script>
+								</div>
+							</div>
+						</div><!-- end nav end -->
+					</div><!-- end container -->
+					<div class="offcanvas-lg offcanvas-start container-lg d-lg-flex px-lg-0" z-index="-1" id="menu">
+						<div class="offcanvas-header px-0">
+							<button class="btn-close shadow-none" data-bs-toggle="offcanvas" data-bs-target="#menu"></button>
+						</div><!-- end offcanvas header -->
+						<div class="offcanvas-body px-0 flex-lg-grow-1">
+							<ul class="nav menu-list nav-lg-breadcrumb flex-column flex-lg-row">
+								<li class="nav-item menu-item">
+									<a href="#" class="nav-link menu-link" id="nav-about">
+										perihal
+									</a>
+								</li><!-- end nav about -->
+								<li class="nav-item menu-item dropdown">
+									<a class="nav-link menu-link" id="nav-product">
+										produk
+									</a>
+									<div class="dropdown-menu px-0" id="dropProduct">
+										<div class="container-lg">
+											<header>
+												<h5 class="fs-4 dropdown-title opacity-50">
+													Produk
+												</h5>
+												<hr>
+											</header>
+											<div class="row tab-menu g-0 gx-lg-5">
+												<div class="col tab-menu-item">
+													<nav class="nav nav-pills flex-column row-gap-2" role="tablist">
+														<a href="products.html" class="nav-link p-0" id="nav-consumer">
+															<span class="active" data-bs-toggle="pill" data-bs-target="#tab-consumer">
+																produk konsumen
+															</span>
+														</a>
+														<a href="foodservice.html" class="nav-link p-0" id="nav-foodservice">
+															<span data-bs-toggle="pill" data-bs-target="#tab-foodservice">
+																foodservice
+															</span>
+														</a>
+														<a href="me.html" class="nav-link p-0" id="nav-me">
+															<span data-bs-toggle="pill" data-bs-target="#tab-me">
+																mesin-mesin & perlengkapan khusus
+															</span>
+														</a>
+													</nav>
+												</div><!-- end col -->
+												<div class="col tab-menu-item">
+													<div class="tab-content">
+														<div class="tab-pane fade show active" id="tab-consumer">
+															<div class="row tab-menu g-0 gx-lg-5">
+																<div class="col tab-menu-item">
+																	<nav class="nav nav-pills flex-column row-gap-2" role="tablist">
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-supresso">
+																			<span class="active" data-bs-toggle="pill" data-bs-target="#tab-consumer-supresso">
+																				supresso
+																			</span>
+																		</a>
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-balicafe">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-consumer-balicafe">
+																				BaliCafé
+																			</span>
+																		</a>
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-ucafe">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-consumer-ucafe">
+																				UCAFÉ
+																			</span>
+																		</a>
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-rs">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-consumer-rs">
+																				rasa sayang
+																			</span>
+																		</a>
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-tb">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-consumer-tb">
+																				tugu buaya
+																			</span>
+																		</a>
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-ue">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-consumer-ue">
+																				uang emas
+																			</span>
+																		</a>
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-jaheku">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-consumer-jaheku">
+																				jaheku
+																			</span>
+																		</a>
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-brochoco">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-consumer-brochoco">
+																				BROCHOCO
+																			</span>
+																		</a>
+																		<a href="products-brand.html" class="nav-link p-0" id="nav-consumer-intirasa">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-consumer-intirasa">
+																				intiRasa
+																			</span>
+																		</a>
+																	</nav>
+																</div><!-- end col -->
+																<div class="col tab-menu-item">
+																	<div class="tab-content">
+																		<div class="tab-pane fade show active" id="tab-consumer-supresso">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-supresso.png" width="100%" height="auto" style="max-width: 5rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					With coffee beans sourced from the East to the West of Indonesia, Supresso's collection of Indonesian single-origin coffee results in a premium range of exquisite and distinctive taste profiles. We whole-heartedly devote our premium and supreme quality coffee to all ardent coffee lovers worldwide, in beans, ground, drip, and capsule form. Experience Indonesian coffee in its purest form, with Supresso.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer supresso -->
+																		<div class="tab-pane fade" id="tab-consumer-balicafe">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-balicafe.png" width="100%" height="auto" style="max-width: 8rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					Created with pure Balinese coffee, discover our coffee creations, and delve into the eternal, and mythical island of Bali with us.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer balicafe -->
+																		<div class="tab-pane fade" id="tab-consumer-ucafe">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-ucafe.png" width="100%" height="auto" style="max-width: 6rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					UCAFE for "U". Designed to connect the world of coffee drinkers together regardless of our boundaries, the wide range of different flavours, tastes and aromas, UCAFE is all about recognising the true "U", who you are meant to be, where you want to be, and what you want to be. Discover all our series and remember to always, be you.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer ucafe -->
+																		<div class="tab-pane fade" id="tab-consumer-rs">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-rasa-sayang.png" width="100%" height="auto" style="max-width: 6rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					Rasa sayang eh, Rasa sayang sayang eh ~ Founded in 1984 to bring to you the taste and aroma of nostalgia, Rasa Sayang is a historical homage to the coffee of the past, with its nostalgic feel and taste, combined with the detailed precision of the new age. Delve into your roots, and the times of our forefathers together, with Rasa Sayang coffee.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer rasa sayang -->
+																		<div class="tab-pane fade" id="tab-consumer-tb">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-tugu-buaya.png" width="100%" height="auto" style="max-width: 8rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					Robust, strong, and bold. Created and developed in 1977, constantly ever-present, formidable, and distinct in taste and profile.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer tugu buaya -->
+																		<div class="tab-pane fade" id="tab-consumer-ue">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-uang-emas.png" width="100%" height="auto" style="max-width: 6rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					Made from selected coffee beans, meet old-school methods combined with a new-school twist. From pure black coffee to creations anew, uncover a contemporary feel that is unlike any other.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer uang emas -->
+																		<div class="tab-pane fade" id="tab-consumer-jaheku">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-jaheku.png" width="100%" height="auto" style="max-width: 6rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					Jaheku / definition / “my” ginger in the Indonesian language. A staple ingredient in many parts around the world, Jaheku puts ginger into the customer's hands with its fresh take on ginger drinks, with distinctive combinations of Brown Sugar & Ginger, as well as Honey & Ginger, alongside its various benefits and unique taste.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer jaheku -->
+																		<div class="tab-pane fade" id="tab-consumer-brochoco">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-brochoco.png" width="100%" height="auto" style="max-width: 6rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					Chocolate drink with different flavours to choose from? BROCHOCO is your answer!! Fill your every day with BROCHOCO, from our Original to Choco Banana. Explore our fun-filled flavours and delight in the never-ending sweetness, creamy and smooth combination. An all-time favourite regardless of ages, our heavenly chocolate drink is sumptuous no matter when and how it is served.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer brochoco -->
+																		<div class="tab-pane fade" id="tab-consumer-intirasa">
+																			<div class="d-flex flex-column row-gap-3">
+																				<div>
+																					<img src="../../asset/img/logo-intirasa.png" width="100%" height="auto" style="max-width: 8rem;" alt="">
+																				</div>
+																				<p class="text-justify small">
+																					IntiRasa coconut milk powder is a practical version of the savory taste of real coconut milk, quality and adapted to the needs of your fast-paced kitchen.
+																				</p>
+																				<div class="row menu-thumbnail">
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																					<div class="col thumbnail-item">
+																						<div class="ratio ratio-1x1">
+																							<img src="" class="object-fit-cover" alt="">
+																						</div>
+																					</div><!-- end col -->
+																				</div><!-- end row -->
+																			</div>
+																		</div><!-- end tab consumer intirasa -->
+																	</div>
+																</div><!-- end col -->
+															</div><!-- end row -->
+														</div><!-- end tab consumer -->
+														<div class="tab-pane fade" id="tab-foodservice">
+															<div class="row tab-menu g-0 gx-lg-5">
+																<div class="col tab-menu-item"></div><!-- end col -->
+																<div class="col tab-menu-item">
+																	<div class="tab-content">
+																		<div class="tab-pane fade show active" id="#">
+																			<div class="row tab-menu g-0 gx-lg-5">
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																			</div><!-- end row -->
+																		</div>
+																		<div class="tab-pane fade" id="#">
+																			<div class="row tab-menu g-0 gx-lg-5">
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																			</div><!-- end row -->
+																		</div>
+																		<div class="tab-pane fade" id="#">
+																			<div class="row tab-menu g-0 gx-lg-5">
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																			</div><!-- end row -->
+																		</div>
+																	</div>
+																</div><!-- end col -->
+															</div><!-- end row -->
+														</div><!-- end tab foodservice -->
+														<div class="tab-pane fade" id="tab-me">
+															<div class="row tab-menu g-0 gx-lg-5">
+																<div class="col tab-menu-item"></div><!-- end col -->
+																<div class="col tab-menu-item">
+																	<div class="tab-content">
+																		<div class="tab-pane fade show active" id="#">
+																			<div class="row tab-menu g-0 gx-lg-5">
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																			</div><!-- end row -->
+																		</div>
+																		<div class="tab-pane fade" id="#">
+																			<div class="row tab-menu g-0 gx-lg-5">
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																			</div><!-- end row -->
+																		</div>
+																		<div class="tab-pane fade" id="#">
+																			<div class="row tab-menu g-0 gx-lg-5">
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																				<div class="col tab-menu-item"></div><!-- end col -->
+																			</div><!-- end row -->
+																		</div>
+																	</div>
+																</div><!-- end col -->
+															</div><!-- end row -->
+														</div><!-- end tab machines & eqipment -->
+													</div>
+												</div><!-- end col -->
+											</div><!-- end row -->
+										</div><!-- end container -->
+									</div>
+								</li><!-- end nav product -->
+								<li class="nav-item menu-item">
+									<a href="#" class="nav-link menu-link" id="nav-businesses">
+										bisnis
+									</a>
+								</li><!-- end nav businesses -->
+								<li class="nav-item menu-item dropdown">
+									<a class="nav-link menu-link" id="nav-store">
+										toko
+									</a>
+									<div class="dropdown-menu px-0" id="dropStore">
+										<div class="container-lg">
+											<header>
+												<h5 class="fs-4 dropdown-title opacity-50">
+													toko resmi
+												</h5>
+												<hr>
+											</header>
+											<div class="row tab-menu g-0 gx-lg-5">
+												<div class="col tab-menu-item">
+													<nav class="nav nav-pills flex-column row-gap-2" role="tablist">
+														<a href="store.html#ecomm-section" class="nav-link" id="nav-ecomm">
+															<span class="active" data-bs-toggle="pill" data-bs-target="#tab-ecomm">
+																e-commerce
+															</span>
+														</a>
+														<a href="store.html#market-section" class="nav-link" id="nav-marketplace">
+															<span data-bs-toggle="pill" data-bs-target="#tab-marketplace">
+																marketplace
+															</span>
+														</a>
+													</nav>
+												</div><!-- end col -->
+												<div class="col tab-menu-item">
+													<div class="tab-content">
+														<div class="tab-pane fade show active" id="tab-ecomm">
+															<div class="row tab-menu g-0 gx-lg-5">
+																<div class="col tab-menu-item">
+																	<nav class="nav nav-pills flex-column row-gap-2" role="tablist">
+																		<a href="#" class="nav-link p-0" id="nav-ecomm-indracostore">
+																			<span class="active" data-bs-toggle="pill" data-bs-target="#tab-ecomm-indracostore">
+																				INDRACO Store
+																			</span>
+																		</a>
+																		<a href="#" class="nav-link p-0" id="nav-ecomm-supresso">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-ecomm-supresso">
+																				supresso
+																			</span>
+																		</a>
+																	</nav>
+																</div><!-- end col -->
+																<div class="col tab-menu-item">
+																	<div class="tab-content">
+																		<div class="tab-pane fade show active" id="tab-ecomm-indracostore">
+																			<img src="../../asset/img/logo-indracostore.png" width="100%" height="auto" alt="" style="max-width: 16rem;">
+																		</div><!-- end tab ecomm indracostore -->
+																		<div class="tab-pane fade" id="tab-ecomm-supresso">
+																			<img src="../../asset/img/logo-supresso-typograph.png" width="100%" height="auto" alt="" style="max-width: 16rem;">
+																		</div><!-- end tab ecomm supresso -->
+																	</div><!-- end tab content -->
+																</div><!-- end col -->
+															</div><!-- end row -->
+														</div><!-- end tab ecomm -->
+														<div class="tab-pane fade" id="tab-marketplace">
+															<div class="row tab-menu g-0 gx-lg-5">
+																<div class="col tab-menu-item">
+																	<nav class="nav nav-pills flex-column row-gap-2" role="tablist">
+																		<a href="#" class="nav-link p-0" id="nav-market-shopee">
+																			<span class="active" data-bs-toggle="pill" data-bs-target="#tab-market-shopee">
+																				shopee
+																			</span>
+																		</a>
+																		<a href="#" class="nav-link p-0" id="nav-market-lazada">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-market-lazada">
+																				lazada
+																			</span>
+																		</a>
+																		<a href="#" class="nav-link p-0" id="nav-market-toped">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-market-toped">
+																				tokopedia
+																			</span>
+																		</a>
+																		<a href="#" class="nav-link p-0" id="nav-market-blibli">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-market-blibli">
+																				blibli
+																			</span>
+																		</a>
+																		<a href="#" class="nav-link p-0" id="nav-market-tiktok">
+																			<span data-bs-toggle="pill" data-bs-target="#tab-market-tiktok">
+																				tikTok shop
+																			</span>
+																		</a>
+																	</nav>
+																</div><!-- end col -->
+																<div class="col tab-menu-item">
+																	<div class="tab-content">
+																		<div class="tab-pane fade show active" id="tab-market-shopee">
+																			<img src="../../asset/img/logo-shopee.png" width="100%" height="auto" alt="" style="max-width: 12rem;">
+																		</div><!-- end tab pane -->
+																		<div class="tab-pane fade" id="tab-market-lazada">
+																			<img src="../../asset/img/logo-lazada.png" width="100%" height="auto" alt="" style="max-width: 12rem;">
+																		</div><!-- end tab pane -->
+																		<div class="tab-pane fade" id="tab-market-toped">
+																			<img src="../../asset/img/logo-tokopedia.png" width="100%" height="auto" alt="" style="max-width: 14rem;">
+																		</div><!-- end tab pane -->
+																		<div class="tab-pane fade" id="tab-market-blibli">
+																			<img src="../../asset/img/logo-blibli.png" width="100%" height="auto" alt="" style="max-width: 10rem;">
+																		</div><!-- end tab pane -->
+																		<div class="tab-pane fade" id="tab-market-tiktok">
+																			<img src="../../asset/img/logo-tiktok.png" width="100%" height="auto" alt="" style="max-width: 16rem;">
+																		</div><!-- end tab pane -->
+																	</div><!-- end tab content -->
+																</div><!-- end col -->
+															</div><!-- end row -->
+														</div><!-- end tab marketplace -->
+													</div><!-- end tab content -->
+												</div><!-- end col -->
+											</div><!-- end row -->
+										</div><!-- end container -->
+									</div>
+								</li><!-- end nav store -->
+								<li class="nav-item menu-item">
+									<a href="#" class="nav-link menu-link" id="nav-event">
+										berita & acara
+									</a>
+								</li><!-- end nav event -->
+								<li class="nav-item menu-item">
+									<a href="#" class="nav-link menu-link" id="nav-brochure">
+										brosur
+									</a>
+								</li><!-- end nav brochure -->
+								<li class="nav-item menu-item">
+									<a href="#" class="nav-link menu-link" id="nav-career">
+										karir
+									</a>
+								</li><!-- end nav career -->
+								<li class="nav-item menu-item">
+									<a href="#" class="nav-link menu-link" id="nav-contact">
+										kontak
+									</a>
+								</li><!-- end nav contact -->
+							</ul><!-- end menu list -->
+						</div><!-- end offcanvas body -->
+						<div class="offcanvas-header px-0 d-lg-block p-lg-0 flex-lg-grow-1flex-lg-grow-0">
+							<div class="d-block d-lg-none">
+								<script src="layout/navtop-submenu.js"></script>
+							</div>
+							<div class="d-none d-lg-block h-100">
+								<script src="layout/toggler-search.js"></script>
+							</div>
+						</div><!-- end offcanvas header -->
+					</div><!-- end memu -->
+				</nav><!-- end navtop -->
+
+			</header><!-- end page wrapper -->
+			<main class="page-content">
+				
+				<div class="jumbotron"></div><!-- end jumbotron -->
+
+				<div class="container">
+					<div class="page-section">
+						<div class="section-item">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam neque iusto atque aperiam fuga beatae eius aspernatur accusamus debitis sunt. Perferendis libero eveniet sint possimus ut corrupti vitae consequatur nostrum?
+							</p>
+						</div>
+						<div class="section-item">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam neque iusto atque aperiam fuga beatae eius aspernatur accusamus debitis sunt. Perferendis libero eveniet sint possimus ut corrupti vitae consequatur nostrum?
+							</p>
+						</div>
+					</div><!-- end page section -->
+				</div><!-- end container -->
+				
+			</main><!-- end page content -->
+			<footer class="page-footer">
+
+				<div class="footbar">
+					<div class="container">
+						<p class="py-5">
+							Hak cipta &copy; 2021 - <script>document.write(new Date().getFullYear())</script> INDRACO. Seluruh hak dilindungi undang-undang.
+						</p>
+					</div><!-- end container -->
+				</div><!-- end footbar -->
+
+			</footer><!-- end page footer -->
+		</div><!-- end page -->
+	</div><!-- end wrapper -->
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.page').addClass('pt-0');
+		});
+	</script>
+</body>
+</html>

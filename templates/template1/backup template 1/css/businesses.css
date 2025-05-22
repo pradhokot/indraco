@@ -1,0 +1,10 @@
+.nav-olshop img {
+   width: auto;
+   height: calc(2rem + .5vw);
+}
+
+@media (min-width: 992px) {
+   .olshop-wording {
+      min-height: 6rem;
+   }
+}

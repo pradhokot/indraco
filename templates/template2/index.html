@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="layout/head.js"></script>
+   <title>INDRACO &bull; Roasting Fine Exquisite Coffee Since 1971</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <style>
+      * {
+         outline: solid 1px green;
+         outline: solid 1px transparent;
+      }
+
+      #home-banner .carousel-caption {
+         top: 50%;
+         left: 0;
+         right: 0;
+         bottom: unset;
+         transform: translateY(-50%);
+         margin: 0;
+         text-align: left;
+         background-color: rgba(0, 0, 0, .5);
+      }
+
+      #home-banner .carousel-item {
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+      }
+
+      #home-banner .carousel-item:nth-of-type(1) {
+         background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.125)), url(../asset/img/home-banner-default.jpeg);
+      }
+   </style>
+</head>
+<body>
+   <div class="page">
+      <header class="page-header">
+         <script src="layout/navbar.js"></script>
+         <div class="banner">
+            <div id="home-banner" class="carousel carousel-fade slide" data-bs-touch="false">
+               <div class="carousel-inner">
+                  <div class="carousel-item text-bg-dark active">
+                     <div class="carousel-caption py-4 py-md-5">
+                        <div class="container">
+                           <h5 class="caption-title fw-thin display-3">
+                              Inovasi & <br> <b class="fw-normal">Masa Depan</b>
+                           </h5>
+                        </div><!-- end container -->
+                     </div>
+                  </div><!-- end carousel item -->
+               </div><!-- end carousel inner -->
+            </div><!-- end home banner -->
+         </div><!-- end banner -->
+      </header><!-- end page header -->
+      <main class="page-body">
+         <section class="container">
+            <div class="section-wrapper">
+               <hr class="section-line d-none">
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nam quis fugit, reprehenderit nulla sequi voluptates ut harum vitae, amet architecto perferendis nemo, atque dolorum magni commodi quos sint tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae animi nobis esse pariatur, consequuntur eligendi quisquam modi perferendis! Aliquam unde qui inventore explicabo voluptate sunt ducimus nisi perferendis reiciendis repellat.
+               </p>
+            </div>
+         </section>
+         <section class="container">
+            <div class="section-wrapper">
+               <hr class="section-line">
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nam quis fugit, reprehenderit nulla sequi voluptates ut harum vitae, amet architecto perferendis nemo, atque dolorum magni commodi quos sint tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae animi nobis esse pariatur, consequuntur eligendi quisquam modi perferendis! Aliquam unde qui inventore explicabo voluptate sunt ducimus nisi perferendis reiciendis repellat.
+               </p>
+            </div>
+         </section>
+      </main><!-- end page body -->
+      <footer class="page-footer">
+         <script src="layout/footbar.js"></script>
+      </footer><!-- end page footer -->
+   </div><!-- end page -->
+   <script src="js/scripts.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('.navbar').addClass('invert');/* add class invert on navbar */
+         $('.page').addClass('pt-0');/* remove padding top on page */
+         $('#home-banner .carousel-item').height($(window).height());
+      });
+   </script>
+</body>
+</html>

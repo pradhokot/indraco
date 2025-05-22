@@ -1,0 +1,77 @@
+.page {
+   padding-top: 0 !important;
+}
+
+.jumbotron {
+   height: 100vh;
+   min-height: 640px;
+   background-color: var(--color-dark);
+   color: white;
+   position: relative;
+   background-image: url(../../assets/img/home-banner-default.jpeg);
+   background-repeat: no-repeat;
+   background-position: 30% center;
+   background-size: cover;
+
+   @media (min-width: 992px) {
+      min-height: 720px;
+   }
+
+   &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent);
+   }
+
+   &::after {
+      content: '';
+      width: 100%;
+      height: 30%;
+      background-color: rgba(0, 0, 0, .5);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}
+
+#customer-trust-card {
+   position: relative;
+   padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+#customer-trust-card::before {
+   content: '';
+   height: 100%;
+   width: auto;
+   background-color: var(--color-light);
+   aspect-ratio: 1/1;
+   position: absolute;
+   top: 0;
+   right: 0;
+   border-radius: var(--bs-border-radius-xl);
+   z-index: -1;
+}
+
+.contact-list a {
+   color: inherit;
+   opacity: .75;
+   text-decoration: none;
+}
+.contact-list a:hover {
+   opacity: 1;
+   text-decoration: underline;
+}
+@media (min-width: 1200px) {
+   .contact-item .card {
+      transform: scale(.875);
+      transition: all .36s ease-in-out;
+   }
+   .contact-item .card:hover {
+      transform: scale(1);
+   }
+}

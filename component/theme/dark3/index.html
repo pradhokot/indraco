@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Halaman Web dengan Pilihan Tema</title>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --header-background: #007bff;
+            --footer-background: #f1f1f1;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+            color-scheme: light dark;
+        }
+
+        header {
+            background-color: var(--header-background);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            padding: 5px 10px;
+            background-color: var(--header-background);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: var(--header-background);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        .dropdown-menu li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .dropdown-menu li i {
+            font-size: 1.2em;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: var(--footer-background);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--footer-background);
+        }
+
+        .dark {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --header-background: #1e1e1e;
+            --footer-background: #1e1e1e;
+        }
+
+        .light {
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --header-background: #007bff;
+            --footer-background: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Selamat Datang di Halaman Web Saya</h1>
+        <div>
+            <label for="theme-selector">Pilih Tema:</label>
+            <div id="theme-selector" class="dropdown">
+                <button class="dropdown-toggle">Pilih Tema</button>
+                <ul class="dropdown-menu">
+                    <li data-theme="auto">
+                        <i class="icon-auto">🌐</i> Otomatis
+                    </li>
+                    <li data-theme="light">
+                        <i class="icon-light">☀️</i> Terang
+                    </li>
+                    <li data-theme="dark">
+                        <i class="icon-dark">🌙</i> Gelap
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Tentang Kami</h2>
+            <p>Ini adalah contoh halaman web yang mendukung pilihan tema.</p>
+        </section>
+        <section>
+            <h2>Kontak</h2>
+            <p>Anda dapat menghubungi kami melalui email di contoh@email.com.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hak Cipta Dilindungi</p>
+    </footer>
+    <script>
+        const themeSelector = document.getElementById('theme-selector');
+        const dropdownToggle = themeSelector.querySelector('.dropdown-toggle');
+        const dropdownItems = themeSelector.querySelectorAll('.dropdown-menu li');
+
+        // Fungsi untuk mengatur tema
+        function setTheme(theme) {
+            document.body.classList.remove('dark', 'light'); // Hapus semua tema sebelumnya
+            if (theme === 'dark') {
+                document.body.classList.add('dark');
+                dropdownToggle.innerHTML = '<i class="icon-dark">🌙</i> Gelap'; // Ubah teks dan ikon tombol
+            } else if (theme === 'light') {
+                document.body.classList.add('light');
+                dropdownToggle.innerHTML = '<i class="icon-light">☀️</i> Terang'; // Ubah teks dan ikon tombol
+            } else {
+                // Otomatis: Cek preferensi tema pengguna
+                const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.body.classList.add(prefersDarkScheme ? 'dark' : 'light');
+                dropdownToggle.innerHTML = '<i class="icon-auto">🌐</i> Otomatis'; // Ubah teks dan ikon tombol
+            }
+        }
+
+        // Cek preferensi tema pengguna saat halaman dimuat
+        setTheme('auto');
+
+        // Tambahkan event listener untuk setiap item dropdown
+        dropdownItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                const selectedTheme = item.getAttribute('data-theme');
+                setTheme(selectedTheme);
+            });
+        });
+
+        // Tambahkan event listener untuk perubahan preferensi tema sistem
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (e) => {
+            if (dropdownToggle.innerHTML.includes('🌐')) {
+                setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    </script>
+</body>
+
+</html>
