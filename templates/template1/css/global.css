@@ -3,6 +3,22 @@
    --bs-primary-rgb: 253, 79, 0;
 }
 
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+
+   &>nav,
+   &>header,
+   &>footer {
+      flex-grow: 0;
+   }
+
+   &>main {
+      flex-grow: 1;
+   }
+}
+
 .container,
 .container-fluid,
 .container-lg,
@@ -11,21 +27,6 @@
 .container-xl,
 .container-xxl {
    --bs-gutter-x: 2rem;
-}
-
-.page {
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-
-   .page-header,
-   .page-footer {
-      flex-grow: 0;
-   }
-
-   .page-body {
-      flex-grow: 1;
-   }
 }
 
 .fs-reset {

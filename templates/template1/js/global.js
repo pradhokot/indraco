@@ -1,16 +1,29 @@
 $(document).ready(function () {
+
    // Set tinggi minimum page-body dan padding page
    var windowHeight = $(window).height();
-   var navbarHeight = $('.navbar').outerHeight();
-   var footerHeight = $('.page-footer').outerHeight();
-   var bodyHeight = windowHeight - navbarHeight - footerHeight;
-   $('.page-body').css('min-height', bodyHeight + 'px');
-   $('.page').css('padding-top', navbarHeight + 'px');
+   var navbarHeight = $('body>nav').outerHeight();
+   $('body').css('padding-top', navbarHeight + 'px');
+   $('#home-banner').css('height', windowHeight + 'px');
+
+   // scrolltop window
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+         $('.navbar').addClass('scrollTop');
+      } else {
+         $('.navbar').removeClass('scrollTop');
+      };
+   });
+
+   // toggle scroll
+   let prevScrollpos = $(window).scrollTop();
+   $(window).on('scroll', function () {
+      $('.navbar').toggleClass('toggle-scroll', prevScrollpos <= $(this).scrollTop());
+      prevScrollpos = $(this).scrollTop();
+   });
    
    // Responsive: klik di mobile, hover di desktop
    if ($(window).width() >= 992) {
-      $('.navbar .collapse').css('top', navbarHeight + 'px');
-
       // Hapus atribut collapse agar tidak bentrok dengan Bootstrap JS
       $('#nav-products, #nav-stores').removeAttr('data-bs-toggle data-bs-target');
 
@@ -61,4 +74,5 @@ $(document).ready(function () {
       }
       lastWindowWidth = currentWidth;
    });
+
 });

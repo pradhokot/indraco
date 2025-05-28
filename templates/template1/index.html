@@ -11,41 +11,38 @@
    </style>
 </head>
 <body>
-   <div class="wrapper">
-      <div class="page">
-         <header class="page-header">
-            <script src="layout/navbar.js"></script>
-            <div class="banner"></div><!-- end banner -->
-         </header><!-- end page wrapper -->
-         <main class="page-body bg-secondary">
-            <section>
-               <div class="container py- py-lg-5">
-                  <p>
-                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem placeat vitae cupiditate reprehenderit autem animi aliquid inventore, nesciunt perferendis quasi, aut adipisci numquam eligendi assumenda necessitatibus cum, sed illum.
-                  </p>
-               </div><!-- end container -->
-            </section>
-         </main><!-- end page body -->
-         <footer class="page-footer">
-            <div class="footbar">
-               <div class="container">
-                  <div class="row row-cols-1">
-                     <div class="col">
-                        <p>
-                           Hak cipta &copy; 2021 - <script>document.write(new Date().getFullYear())</script> INDRACO. Seluruh hak dilindungi undang-undang.
-                        </p>
-                     </div><!-- end col -->
-                  </div><!-- end row -->
-               </div><!-- end container -->
-            </div><!-- end footbar -->
-         </footer><!-- end page footer -->
-      </div><!-- end page -->
-   </div><!-- end wrapper -->
+   <script src="layout/navbar.js"></script>
+   <header>
+      <div id="home-banner" class="banner text-bg-dark"></div><!-- end banner -->
+   </header>
+   <main>
+      <section>
+         <div class="container">
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, qui adipisci? Quae nobis id ad corrupti omnis voluptatibus? Quos fuga amet laboriosam illum itaque ipsum voluptatibus quia animi aspernatur consequatur?
+            </p>
+         </div><!-- end container -->
+      </section>
+      <section class="vh-100"></section>
+   </main>
+   <footer class="footbar">
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <p>
+                  Hak cipta &copy; 2021 - <script>document.write(new Date().getFullYear())</script> INDRACO. Seluruh hak dilindungi undang-undang.
+               </p>
+            </div><!-- end col -->
+         </div><!-- end row -->
+      </div><!-- end container -->
+   </footer>
    <script src="js/global.js"></script>
    <script>
       $(document).ready(function() {
-         $('#nav-about').addClass('active');
-      })
+         $('body').addClass('pt-0');
+         $('.navbar').addClass('navbar-invert');
+         // $('#nav-about').addClass('active');
+      });
    </script>
 </body>
 </html>

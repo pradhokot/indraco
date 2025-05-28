@@ -3,7 +3,7 @@ document.writeln(`
    <div class="navbar-top">
       <div class="container py-3 pb-lg-2 pt-lg-5">
          <div class="navtop-start d-lg-none">
-            <button class="btn rounded-0 border-0 shadow-none p-0" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+            <button class="btn rounded-0 border-0 shadow-none p-0 text-reset link-hover" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
                <i class="fas fa-bars fa-lg"></i>
             </button>
          </div>
@@ -32,7 +32,7 @@ document.writeln(`
          <div class="offcanvas-header">
             <button class="btn-close border-0 rounded-0 shadow-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></button>
          </div>
-         <div class="offcanvas-body">
+         <div class="offcanvas-body py-0">
             <ul class="navbar-nav py-0">
                <li class="nav-item">
                   <a href="#" class="nav-link px-lg-3 text-uppercase link-hover" id="nav-about">
@@ -99,7 +99,10 @@ document.writeln(`
                </li>
             </ul>
          </div>
-         <div class="offcanvas-header d-lg-block p-lg-0">
+         <div class="offcanvas-header d-lg-block p-lg-0 position-relative">
+            <div class="px-3 w-100 position-absolute top-0 start-0 end-0 translate-middle-y d-lg-none">
+               <hr class="m-0">
+            </div>
             <div class="d-lg-none">
                <script src="layout/submenu.js"></script>
             </div>
