@@ -1,0 +1,55 @@
+:root {
+   --bs-primary: #fd4f00;
+   --bs-primary-rgb: 253, 79, 0;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+   --bs-gutter-x: 2rem;
+}
+
+.page {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+
+   .page-header,
+   .page-footer {
+      flex-grow: 0;
+   }
+
+   .page-body {
+      flex-grow: 1;
+   }
+}
+
+.fs-reset {
+   font-size: inherit;
+}
+
+.ratio {
+   background-color: var(--bs-dark);
+   background-image: url(../../../asset/img/no-images.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 50% auto;
+}
+
+.link-hover {
+   color: currentColor;
+   opacity: .75;
+   text-decoration: none;
+   cursor: pointer;
+
+   &:hover,
+   &:focus,
+   &.active {
+      opacity: 1;
+      color: var(--bs-primary) !important;
+   }
+}

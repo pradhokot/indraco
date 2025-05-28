@@ -1,7 +1,7 @@
 $(document).ready(function () {
    // ----------------- variabel height
-   var windowHeight = $(window).height();
    // var headerHeight = $('.page-header').outerHeight();
+   var windowHeight = $(window).height();
    var navbarHeight = $('.navbar').outerHeight();
    var footerHeight = $('.page-footer').outerHeight();
    var footerHeight = $('.page-footer').outerHeight();
@@ -31,56 +31,54 @@ $(document).ready(function () {
 
    // ----------------- match media width
    if ($(window).width() < 992) {
-      // mobile preview
-      $('.dropdown>.nav-link').removeAttr('href');
-
-      // Ubah event hover menjadi click untuk dropdown di mobile
-      $('.nav-item.dropdown').off('mouseenter mouseleave').on('click', function (e) {
-         // Toggle slide pada dropdown-menu
-         var $menu = $(this).find('.dropdown-menu');
-         if ($menu.is(':visible')) {
-            $menu.stop(true, true).slideUp(200);
-         } else {
-            $menu.stop(true, true).slideDown(250);
-         }
-         // Agar tidak bubble ke parent (misal ada nested dropdown)
-         e.stopPropagation();
-         // Optional: tutup dropdown lain
-         $(this).siblings('.nav-item.dropdown').find('.dropdown-menu').slideUp(200);
-      });
+      // MOBILE PREVIEW
+      $('.collapsed').removeAttr('href');/* remove attribute toggle href on mobile */
    }
    else {
-      // desktop preview
-      // change trigger nav-tabs from click to hover
+      // DESKTOP PREVIEW
+      $('.collapsed').removeAttr('data-bs-toggle data-bs-target');/* remove attribute toggle collapse on deskktop */
+
+      // Hover multiple collapse on desktop
+      $('.collapsed').closest('.nav-item').hover(
+         function () {
+            $(this).find('.collapse').stop(true, true).slideDown(250).addClass('show');
+            $(this).find('.collapsed').removeClass('collapsed');
+            $('.navbar').addClass('toggle-collapsed');
+         },
+         function () {
+            $(this).find('.collapse').stop(true, true).slideUp(200).removeClass('show');
+            $(this).find('.nav-link').addClass('collapsed');
+         }
+      );
+      $('.navbar').on('mouseleave', function () {
+         $(this).removeClass('toggle-collapsed');
+      });
+
+
       document.querySelectorAll('.nav-pills>.nav-item>.nav-link>span').forEach(function (everyitem) {
          var tabTrigger = new bootstrap.Tab(everyitem)
          everyitem.addEventListener('mouseenter', function () {
             tabTrigger.show();
          });
-      });
+      });/* change trigger nav-tabs from click to hover */
 
       // add active class on first navbar tab menu
       $('.nav-pills>.nav-item:first-of-type>.nav-link>span').addClass('active');
       $('.tab-content>.tab-pane:first-of-type').addClass('active show');
-
-
-      // Untuk dropdown di navbar
-      $('.nav-item.dropdown').hover(
-         function () {
-            // Saat mouse masuk, slide down menu
-            $(this).find('.dropdown-menu').stop(true, true).slideDown(250);
-            $('.navbar').addClass('show-dropdown');
-         },
-         function () {
-            // Saat mouse keluar, slide up menu
-            $(this).find('.dropdown-menu').stop(true, true).slideUp(200);
-            $('.navbar').removeClass('show-dropdown');
-         }
-      );
    }
 
 
    // ----------------- auto refresh page on responsive width
+   let lastWindowWidth = $(window).width();
+   $(window).resize(function () {
+      const currentWidth = $(window).width();
+      const crossed992 = (lastWindowWidth < 992 && currentWidth >= 992) || (lastWindowWidth >= 992 && currentWidth < 992);
+      if (crossed992) {
+         location.reload();
+      }
+      lastWindowWidth = currentWidth;
+   });
+
    // let lastWindowWidth = $(window).width();
    // $(window).resize(function () {
    //    const currentWidth = $(window).width();
@@ -91,16 +89,6 @@ $(document).ready(function () {
    //    }
    //    lastWindowWidth = currentWidth;
    // });
-
-   let lastWindowWidth = $(window).width();
-   $(window).resize(function () {
-      const currentWidth = $(window).width();
-      const crossed992 = (lastWindowWidth < 992 && currentWidth >= 992) || (lastWindowWidth >= 992 && currentWidth < 992);
-      if (crossed992) {
-         location.reload();
-      }
-      lastWindowWidth = currentWidth;
-   });
 
    // var windowWidth = $(window).width();
    // $(window).resize(function () {
