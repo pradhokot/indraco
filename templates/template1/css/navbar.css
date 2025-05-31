@@ -93,6 +93,10 @@
                   transform: none;
                   opacity: 1;
                }
+
+               &.no-tab::after {
+                  display: none !important;
+               }
             }
          }
       }

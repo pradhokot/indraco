@@ -1,5 +1,5 @@
 document.writeln(`
-<nav class="navbar navbar-expand-lg d-block text-capitalize fixed-top py-0">
+<div class="navbar navbar-expand-lg d-block text-capitalize fixed-top py-0">
    <div class="navbar-top">
       <div class="container py-3 pb-lg-2 pt-lg-5">
          <div class="navtop-start d-lg-none">
@@ -61,7 +61,7 @@ document.writeln(`
                </li>
                <li class="nav-item dropdown">
                   <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse-stores" class="nav-link px-lg-3 text-uppercase link-hover collapsed" id="nav-stores">
-                     <b class="fw-medium">official stores</b>
+                     <b class="fw-medium">stores</b>
                   </a>
                   <script src="layout/collapse-stores.js"></script>
                </li>
@@ -112,4 +112,4 @@ document.writeln(`
          </div>
       </div>
    </div><!-- end navbar bottom -->
-</nav><!-- end navbar -->`)
+</div><!-- end navbar -->`)

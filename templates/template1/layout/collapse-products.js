@@ -542,7 +542,7 @@ document.writeln(`
                               </span>
                            </a>
                            <a href="" class="nav-link p-0 rounded-0 text-reset" id="nav-warranty">
-                              <span data-bs-toggle="pill" data-bs-target="#" class="d-flex w-100 py-2 link-hover">
+                              <span data-bs-toggle="pill" data-bs-target="#" class="d-flex w-100 py-2 link-hover no-tab">
                                  warranty registration
                               </span>
                            </a>
