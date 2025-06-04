@@ -95,17 +95,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -120,17 +120,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -145,17 +145,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -170,17 +170,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -195,17 +195,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -220,17 +220,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -245,17 +245,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -270,17 +270,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -295,17 +295,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -367,17 +367,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -394,17 +394,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -421,17 +421,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -448,17 +448,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -475,17 +475,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
@@ -502,17 +502,17 @@ document.writeln(`
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->
                                  <div class="col">
-                                    <div class="ratio ratio-1x1 rounded-0 w-100">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
                                        <img src="" class="object-fit-cover" alt="">
                                     </div>
                                  </div><!-- end col -->

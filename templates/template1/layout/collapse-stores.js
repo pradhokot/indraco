@@ -2,7 +2,7 @@ document.writeln(`
 <div class="collapse text-body bg-body" id="collapse-stores" data-bs-parent="#sidebar">
    <div class="container-lg py-lg-3 pb-lg-5">
       <header class="d-none d-lg-block">
-         <h5 class="fs-4"><b class="fw-bold">Indraco Official Stores</b></h5>
+         <h5 class="fs-4"><b class="fw-bold">Official Stores</b></h5>
          <hr class="opacity-100 border-2">
       </header>
       <div class="row g-0 flex-nowrap">
