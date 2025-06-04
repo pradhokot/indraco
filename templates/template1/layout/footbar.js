@@ -107,7 +107,7 @@ document.writeln(`
                <li class="nav-item"><div class="vr h-100"></div></li>
                <li class="nav-item">
                   <a href="" class="nav-link text-reset link-hover link-hover-underline text-capitalize py-0 px-2">
-                     tems & conditions
+                     terms & conditions
                   </a>
                </li>
                <li class="nav-item"><div class="vr h-100"></div></li>

@@ -2,8 +2,8 @@ $(document).ready(function () {
 
    // Set tinggi minimum page-body dan padding page
    var windowHeight = $(window).height();
-   var navHeight = $('body>nav').outerHeight();
-   $('body').css('padding-top', navHeight + 'px');
+   var navbarHeight = $('.navbar').outerHeight();
+   $('body').css('padding-top', navbarHeight + 'px');
    $('#home-banner').css('height', windowHeight + 'px');
 
    // scrolltop window
@@ -26,10 +26,6 @@ $(document).ready(function () {
    if ($(window).width() >= 992) {
       // Hapus atribut collapse agar tidak bentrok dengan Bootstrap JS
       $('#nav-products, #nav-stores').removeAttr('data-bs-toggle data-bs-target');
-
-      // set tinggi collapse
-      // var navbarHeight = $('.navbar').outerHeight();
-      // $('.navbar .collapse').css('top', navbarHeight + 'px');
 
       // Hover untuk menampilkan collapse
       $('.collapsed').closest('.nav-item').hover(

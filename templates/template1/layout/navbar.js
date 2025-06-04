@@ -35,7 +35,7 @@ document.writeln(`
          <div class="offcanvas-body py-0">
             <ul class="navbar-nav py-0">
                <li class="nav-item">
-                  <a href="#" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-about">
+                  <a href="about.html" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-about">
                      <b class="fw-medium">about us</b>
                   </a>
                </li>
@@ -43,7 +43,7 @@ document.writeln(`
                   <div class="vr h-75 position-absolute top-50 start-50 translate-middle"></div>
                </li>
                <li class="nav-item dropdown">
-                  <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse-products" class="nav-link px-lg-3 text-uppercase text-reset link-hover collapsed" id="nav-products">
+                  <a href="products.html" data-bs-toggle="collapse" data-bs-target="#collapse-products" class="nav-link px-lg-3 text-uppercase text-reset link-hover collapsed" id="nav-products">
                      <b class="fw-medium">products</b>
                   </a>
                   <script src="layout/collapse-products.js"></script>
@@ -52,7 +52,7 @@ document.writeln(`
                   <div class="vr h-75 position-absolute top-50 start-50 translate-middle"></div>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-businesses">
+                  <a href="businesses.html" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-businesses">
                      <b class="fw-medium">businesses</b>
                   </a>
                </li>
@@ -60,7 +60,7 @@ document.writeln(`
                   <div class="vr h-75 position-absolute top-50 start-50 translate-middle"></div>
                </li>
                <li class="nav-item dropdown">
-                  <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse-stores" class="nav-link px-lg-3 text-uppercase text-reset link-hover collapsed" id="nav-stores">
+                  <a href="stores.html" data-bs-toggle="collapse" data-bs-target="#collapse-stores" class="nav-link px-lg-3 text-uppercase text-reset link-hover collapsed" id="nav-stores">
                      <b class="fw-medium">stores</b>
                   </a>
                   <script src="layout/collapse-stores.js"></script>
@@ -69,7 +69,7 @@ document.writeln(`
                   <div class="vr h-75 position-absolute top-50 start-50 translate-middle"></div>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-news">
+                  <a href="events.html" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-events">
                      <b class="fw-medium">news & events</b>
                   </a>
                </li>
@@ -77,7 +77,7 @@ document.writeln(`
                   <div class="vr h-75 position-absolute top-50 start-50 translate-middle"></div>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-brochures">
+                  <a href="brochures.html" target="_blank" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-brochures">
                      <b class="fw-medium">brochures</b>
                   </a>
                </li>
@@ -85,7 +85,7 @@ document.writeln(`
                   <div class="vr h-75 position-absolute top-50 start-50 translate-middle"></div>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-career">
+                  <a href="career.html" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-career">
                      <b class="fw-medium">career</b>
                   </a>
                </li>
@@ -93,7 +93,7 @@ document.writeln(`
                   <div class="vr h-75 position-absolute top-50 start-50 translate-middle"></div>
                </li>
                <li class="nav-item">
-                  <a href="#" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-contact">
+                  <a href="contact.html" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-contact">
                      <b class="fw-medium">contact</b>
                   </a>
                </li>

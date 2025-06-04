@@ -1,0 +1,32 @@
+.history-list {
+   max-width: 32rem;
+
+   .history-item {
+      &>.col:first-of-type {
+         .fas.top-0 {
+            top: 1.125rem !important;
+         }
+
+         .vr.h-100 {
+            width: 2px !important;
+         }
+      }
+
+      &:first-of-type {
+         &>.col:first-of-type {
+            .vr.h-100 {
+               height: calc(100% - 1rem) !important;
+               margin-top: 1rem;
+            }
+         }
+      }
+
+      &:last-of-type {
+         &>.col:first-of-type {
+            .vr.h-100 {
+               height: 1.5rem !important;
+            }
+         }
+      }
+   }
+}
