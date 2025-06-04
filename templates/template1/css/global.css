@@ -80,7 +80,6 @@ textarea::placeholder,
 }
 
 .link-hover {
-   color: currentColor !important;
    opacity: var(--link-opacity);
    text-decoration: none;
    cursor: pointer;
@@ -98,15 +97,12 @@ textarea::placeholder,
 }
 
 .link-hover-underline {
-   color: currentColor !important;
-   opacity: var(--link-opacity);
    text-decoration: none;
    cursor: pointer;
    transition: .3s ease-in-out;
 
    &:hover,
    &:focus {
-      opacity: 1;
       text-decoration: underline;
    }
 
@@ -301,8 +297,6 @@ textarea::placeholder,
       gap: .5rem .75rem;
 
       &>a {
-         color: currentColor;
-         text-decoration: none;
          font-size: inherit;
          display: flex;
          justify-content: center;

@@ -12,22 +12,22 @@ document.writeln(`
                </div>
                <div>
                   <nav class="nav-sosmed">
-                     <a href="#" target="_blank" class="link-hover">
+                     <a href="#" target="_blank" class="text-reset text-decoration-none">
                         <i class="fab fa-x-twitter"></i>
                      </a>
-                     <a href="#" target="_blank" class="link-hover">
+                     <a href="#" target="_blank" class="text-reset text-decoration-none">
                         <i class="fab fa-facebook-f"></i>
                      </a>
-                     <a href="#" target="_blank" class="link-hover">
+                     <a href="#" target="_blank" class="text-reset text-decoration-none">
                         <i class="fab fa-instagram"></i>
                      </a>
-                     <a href="#" target="_blank" class="link-hover">
+                     <a href="#" target="_blank" class="text-reset text-decoration-none">
                         <i class="fab fa-youtube"></i>
                      </a>
-                     <a href="#" target="_blank" class="link-hover">
+                     <a href="#" target="_blank" class="text-reset text-decoration-none">
                         <i class="fab fa-tiktok"></i>
                      </a>
-                     <a href="#" target="_blank" class="link-hover">
+                     <a href="#" target="_blank" class="text-reset text-decoration-none">
                         <i class="fab fa-linkedin-in"></i>
                      </a>
                   </nav>
@@ -39,15 +39,15 @@ document.writeln(`
                <b class="fw-bold">CONTACT US</b>
             </h5>
             <address class="mb-0">
-               <a href="#" target="_blank" class="link-hover-underline">
+               <a href="#" target="_blank" class="text-reset link-hover link-hover-underline">
                   Jl. Semeru No. 133-135 Bambe, <br class="d-none d-md-block">Kec. Driyorejo, Gresik 61177 <br class="d-none d-md-block">Jawa Timur - Indonesia
                </a>
                <br><br>
-               <b class="fw-medium">T</b>. <a href="#" target="_blank" class="link-hover-underline">+62 31 766 8777</a>, <a href="" target="_blank" class="link-hover-underline">766 7388</a>
+               <b class="fw-medium">T</b>. <a href="#" target="_blank" class="text-reset link-hover link-hover-underline">+62 31 766 8777</a>, <a href="" target="_blank" class="text-reset link-hover link-hover-underline">766 7388</a>
                <br>
-               <b class="fw-medium">F</b>. <a href="#" target="_blank" class="link-hover-underline">+62 31 766 9590</a>
+               <b class="fw-medium">F</b>. <a href="#" target="_blank" class="text-reset link-hover link-hover-underline">+62 31 766 9590</a>
                <br>
-               <b class="fw-medium">E</b>. <a href="#" target="_blank" class="link-hover-underline">info@indraco.com</a>
+               <b class="fw-medium">E</b>. <a href="#" target="_blank" class="text-reset link-hover link-hover-underline">info@indraco.com</a>
             </address>
          </div><!-- end col -->
          <div class="col col-12 col-md-auto order-lg-2">
@@ -56,34 +56,34 @@ document.writeln(`
             </h5>
             <ul class="list-unstyled nav-links mb-0">
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">supresso</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">supresso</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">balicafe</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">balicafe</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">ucafe</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">ucafe</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">rasa sayang</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">rasa sayang</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">tugu buaya</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">tugu buaya</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">uang emas</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">uang emas</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">hao cafe</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">hao cafe</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">brochoco</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">brochoco</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">jaheku</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">jaheku</a>
                </li>
                <li>
-                  <a href="#" class="link-hover-underline text-uppercase">intirasa</a>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">intirasa</a>
                </li>
             </ul>
          </div><!-- end col -->
@@ -100,25 +100,25 @@ document.writeln(`
          <div class="col">
             <ul class="nav justify-content-center" id="nav-privacy">
                <li class="nav-item">
-                  <a href="" class="nav-link link-hover-underline text-capitalize py-0 px-2">
+                  <a href="" class="nav-link text-reset link-hover link-hover-underline text-capitalize py-0 px-2">
                      privacy policy
                   </a>
                </li>
                <li class="nav-item"><div class="vr h-100"></div></li>
                <li class="nav-item">
-                  <a href="" class="nav-link link-hover-underline text-capitalize py-0 px-2">
+                  <a href="" class="nav-link text-reset link-hover link-hover-underline text-capitalize py-0 px-2">
                      tems & conditions
                   </a>
                </li>
                <li class="nav-item"><div class="vr h-100"></div></li>
                <li class="nav-item">
-                  <a href="" class="nav-link link-hover-underline text-capitalize py-0 px-2">
+                  <a href="" class="nav-link text-reset link-hover link-hover-underline text-capitalize py-0 px-2">
                      information on data protection
                   </a>
                </li>
                <li class="nav-item"><div class="vr h-100"></div></li>
                <li class="nav-item">
-                  <a href="" class="nav-link link-hover-underline text-capitalize py-0 px-2">
+                  <a href="" class="nav-link text-reset link-hover link-hover-underline text-capitalize py-0 px-2">
                      help?
                   </a>
                </li>
