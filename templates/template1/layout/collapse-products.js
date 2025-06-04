@@ -2,7 +2,7 @@ document.writeln(`
 <div class="collapse text-body bg-body" id="collapse-products" data-bs-parent="#sidebar">
    <div class="container-lg py-lg-3 pb-lg-5">
       <header class="d-none d-lg-block">
-         <h5 class="fs-4"><b class="fw-bold">Our Products</b></h5>
+         <h5 class="fs-4"><b class="fw-medium">Our Products</b></h5>
          <hr class="opacity-100 border-2">
       </header>
       <div class="row g-0 flex-nowrap">
@@ -358,7 +358,7 @@ document.writeln(`
                         <div class="tab-content">
                            <div class="tab-pane fade" id="tab-fs-coffee">
                               <h5 class="fs-5">
-                                 <b class="fw-bold">
+                                 <b class="fw-medium">
                                     Coffee
                                  </b>
                               </h5>
@@ -385,7 +385,7 @@ document.writeln(`
                            </div><!-- end tab pane -->
                            <div class="tab-pane fade" id="tab-fs-creamer">
                               <h5 class="fs-5">
-                                 <b class="fw-bold">
+                                 <b class="fw-medium">
                                     Creamer
                                  </b>
                               </h5>
@@ -412,7 +412,7 @@ document.writeln(`
                            </div><!-- end tab pane -->
                            <div class="tab-pane fade" id="tab-fs-tea">
                               <h5 class="fs-5">
-                                 <b class="fw-bold">
+                                 <b class="fw-medium">
                                     Tea
                                  </b>
                               </h5>
@@ -439,7 +439,7 @@ document.writeln(`
                            </div><!-- end tab pane -->
                            <div class="tab-pane fade" id="tab-fs-ginger">
                               <h5 class="fs-5">
-                                 <b class="fw-bold">
+                                 <b class="fw-medium">
                                     Ginger
                                  </b>
                               </h5>
@@ -466,7 +466,7 @@ document.writeln(`
                            </div><!-- end tab pane -->
                            <div class="tab-pane fade" id="tab-fs-cocoa">
                               <h5 class="fs-5">
-                                 <b class="fw-bold">
+                                 <b class="fw-medium">
                                     Cocoa
                                  </b>
                               </h5>
@@ -493,7 +493,7 @@ document.writeln(`
                            </div><!-- end tab pane -->
                            <div class="tab-pane fade" id="tab-fs-sugar">
                               <h5 class="fs-5">
-                                 <b class="fw-bold">
+                                 <b class="fw-medium">
                                     Sugar
                                  </b>
                               </h5>
@@ -591,7 +591,7 @@ document.writeln(`
                                     <div class="tab-content">
                                        <div class="tab-pane fade" id="tab-fully-automatic">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Fully-automatic Coffee Machines
                                              </b>
                                           </h5>
@@ -601,7 +601,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-semi-automatic">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Semi-automatic Coffee Machines
                                              </b>
                                           </h5>
@@ -611,7 +611,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-brewing">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Semi-automatic Coffee Machines
                                              </b>
                                           </h5>
@@ -621,7 +621,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-capsules">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Coffee Capsules Machines
                                              </b>
                                           </h5>
@@ -631,7 +631,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-grinder">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Grinder
                                              </b>
                                           </h5>
@@ -666,7 +666,7 @@ document.writeln(`
                                     <div class="tab-content">
                                        <div class="tab-pane fade" id="tab-dispensers-instant">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Instant Beverage Machines
                                              </b>
                                           </h5>
@@ -676,7 +676,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-dispensers-cold">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Cold Drink Dispensers
                                              </b>
                                           </h5>
@@ -726,7 +726,7 @@ document.writeln(`
                                     <div class="tab-content">
                                        <div class="tab-pane fade" id="tab-frothers">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Milk Frothers
                                              </b>
                                           </h5>
@@ -736,7 +736,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-kettles">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Electric Kettles
                                              </b>
                                           </h5>
@@ -746,7 +746,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-french-press">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 French Press
                                              </b>
                                           </h5>
@@ -756,7 +756,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-moka-pot">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Moka Pot
                                              </b>
                                           </h5>
@@ -766,7 +766,7 @@ document.writeln(`
                                        </div><!-- end tab pane -->
                                        <div class="tab-pane fade" id="tab-double-glass">
                                           <h5 class="fs-5">
-                                             <b class="fw-bold">
+                                             <b class="fw-medium">
                                                 Double Wall Galss Cups
                                              </b>
                                           </h5>
