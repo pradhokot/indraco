@@ -7,6 +7,12 @@
 }
 
 html {
+   font-size: .875em;
+
+   @media (min-width: 576px) {
+      font-size: 1em;
+   }
+
    @media (min-width: 1400px) {
       font-size: 1.125em;
    }
