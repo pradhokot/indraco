@@ -8,7 +8,7 @@ document.writeln(`
       <div class="row g-0 flex-nowrap">
          <div class="col col-12 col-lg-auto">
             <nav class="nav nav-pills flex-column" role="tablist">
-               <a href="products.html" class="nav-link p-0 rounded-0 text-reset" id="nav-consumer">
+               <a href="consumer.html" class="nav-link p-0 rounded-0 text-reset" id="nav-consumer">
                   <span data-bs-toggle="pill" data-bs-target="#tab-consumer" class="d-flex w-100 py-2 link-hover">
                      consumer
                   </span>
@@ -20,7 +20,7 @@ document.writeln(`
                </a>
                <a href="me.html" class="nav-link p-0 rounded-0 text-reset" id="nav-me">
                   <span data-bs-toggle="pill" data-bs-target="#tab-me" class="d-flex w-100 py-2 link-hover">
-                     machines & equipment
+                     machine & equipment
                   </span>
                </a>
             </nav>
@@ -64,9 +64,9 @@ document.writeln(`
                                  uang emas
                               </span>
                            </a>
-                           <a href="products-brand.html" class="nav-link p-0 rounded-0 text-reset" id="nav-consumer-jaheku">
-                              <span data-bs-toggle="pill" data-bs-target="#tab-consumer-jaheku" class="d-flex w-100 py-2 link-hover">
-                                 jaheku
+                           <a href="products-brand.html" class="nav-link p-0 rounded-0 text-reset" id="nav-consumer-hao">
+                              <span data-bs-toggle="pill" data-bs-target="#tab-consumer-hao" class="d-flex w-100 py-2 link-hover">
+                                 hao cafe
                               </span>
                            </a>
                            <a href="products-brand.html" class="nav-link p-0 rounded-0 text-reset" id="nav-consumer-brochoco">
@@ -74,9 +74,19 @@ document.writeln(`
                                  BROCHOCO
                               </span>
                            </a>
+                           <a href="products-brand.html" class="nav-link p-0 rounded-0 text-reset" id="nav-consumer-jaheku">
+                              <span data-bs-toggle="pill" data-bs-target="#tab-consumer-jaheku" class="d-flex w-100 py-2 link-hover">
+                                 jaheku
+                              </span>
+                           </a>
                            <a href="products-brand.html" class="nav-link p-0 rounded-0 text-reset" id="nav-consumer-intirasa">
                               <span data-bs-toggle="pill" data-bs-target="#tab-consumer-intirasa" class="d-flex w-100 py-2 link-hover">
                                  intiRasa
+                              </span>
+                           </a>
+                           <a href="products-brand.html" class="nav-link p-0 rounded-0 text-reset" id="nav-consumer-ceria">
+                              <span data-bs-toggle="pill" data-bs-target="#tab-consumer-ceria" class="d-flex w-100 py-2 link-hover">
+                                 ceria
                               </span>
                            </a>
                         </nav>
@@ -236,12 +246,12 @@ document.writeln(`
                                  </div><!-- end col -->
                               </div><!-- end row -->
                            </div><!-- end tab pane -->
-                           <div class="tab-pane fade" id="tab-consumer-jaheku">
+                           <div class="tab-pane fade" id="tab-consumer-hao">
                               <div class="mb-3">
-                                 <img src="../../asset/img/logo-jaheku.png" width="100%" height="auto" style="max-width: 6rem;" alt="">
+                                 <img src="../../asset/img/logo-hao.png" width="100%" height="auto" style="max-width: 6rem;" alt="">
                               </div>
                               <p class="text-justify">
-                                 Jaheku / definition / “my” ginger in the Indonesian language. A staple ingredient in many parts around the world, Jaheku puts ginger into the customer's hands with its fresh take on ginger drinks, with distinctive combinations of Brown Sugar & Ginger, as well as Honey & Ginger, alongside its various benefits and unique taste.
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit optio recusandae nesciunt eius iste quam autem eaque consequatur laboriosam minima quidem iusto nemo doloribus repudiandae, a perspiciatis sequi labore tempore.
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">
@@ -267,6 +277,31 @@ document.writeln(`
                               </div>
                               <p class="text-justify">
                                  Chocolate drink with different flavours to choose from? BROCHOCO is your answer!! Fill your every day with BROCHOCO, from our Original to Choco Banana. Explore our fun-filled flavours and delight in the never-ending sweetness, creamy and smooth combination. An all-time favourite regardless of ages, our heavenly chocolate drink is sumptuous no matter when and how it is served.
+                              </p>
+                              <div class="row row-cols-6 g-2 row-grid">
+                                 <div class="col">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
+                                       <img src="" class="object-fit-cover" alt="">
+                                    </div>
+                                 </div><!-- end col -->
+                                 <div class="col">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
+                                       <img src="" class="object-fit-cover" alt="">
+                                    </div>
+                                 </div><!-- end col -->
+                                 <div class="col">
+                                    <div class="ratio ratio-1x1 img-ratio rounded-2 w-100">
+                                       <img src="" class="object-fit-cover" alt="">
+                                    </div>
+                                 </div><!-- end col -->
+                              </div><!-- end row -->
+                           </div><!-- end tab pane -->
+                           <div class="tab-pane fade" id="tab-consumer-jaheku">
+                              <div class="mb-3">
+                                 <img src="../../asset/img/logo-jaheku.png" width="100%" height="auto" style="max-width: 6rem;" alt="">
+                              </div>
+                              <p class="text-justify">
+                                 Jaheku / definition / “my” ginger in the Indonesian language. A staple ingredient in many parts around the world, Jaheku puts ginger into the customer's hands with its fresh take on ginger drinks, with distinctive combinations of Brown Sugar & Ginger, as well as Honey & Ginger, alongside its various benefits and unique taste.
                               </p>
                               <div class="row row-cols-6 g-2 row-grid">
                                  <div class="col">

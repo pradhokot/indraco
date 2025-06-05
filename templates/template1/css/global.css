@@ -118,6 +118,17 @@ textarea::placeholder,
    }
 }
 
+.btn-explore-section {
+   &>i {
+      transform: rotate(180deg);
+      transition: transform .3s ease-in-out;
+   }
+
+   &.collapsed>i {
+      transform: rotate(0deg);
+   }
+}
+
 
 
 /* --------------------- NAVBAR */

@@ -85,6 +85,9 @@ document.writeln(`
                <li>
                   <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">intirasa</a>
                </li>
+               <li>
+                  <a href="#" class="text-reset link-hover link-hover-underline text-uppercase">ceria</a>
+               </li>
             </ul>
          </div><!-- end col -->
       </div><!-- end row -->
