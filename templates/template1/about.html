@@ -9,21 +9,62 @@
          outline: solid 1px green;
          outline: solid 1px transparent;
       }
+   
+      .history-list {
+         max-width: 32rem;
+   
+         .history-item {
+            &>.col:first-of-type {
+               .fas.top-0 {
+                  top: 1.25rem !important;
+               }
+   
+               .vr.h-100 {
+                  width: 2px !important;
+               }
+            }
+   
+            &:first-of-type {
+               &>.col:first-of-type {
+                  .vr.h-100 {
+                     height: calc(100% - 1rem) !important;
+                     margin-top: 1.25rem;
+                  }
+               }
+            }
+   
+            &:last-of-type {
+               &>.col:first-of-type {
+                  .vr.h-100 {
+                     height: 1.25rem !important;
+                  }
+               }
+            }
+         }
+      }
    </style>
 </head>
 <body>
    <nav>
       <script src="layout/navbar.js"></script>
    </nav>
-   <header></header>
+   <header>
+      <div class="page-title pt-3 d-lg-none">
+         <div class="container d-flex flex-column row-gap-3">
+            <h2 class="fs-4 m-0 text-uppercase">
+               <b class="fw-medium">about us</b>
+            </h2>
+         </div><!-- end container -->
+      </div><!-- end page title -->
+   </header>
    <main>
       <section class="overflow-hidden">
          <div class="container py-4 py-md-5">
             <div class="row row-gap-4 gx-lg-5 align-items-lg-center justify-content-lg-between">
                <div class="col col-12 col-lg-6">
-                  <h2 class="page-title fs-4 mb-4">
-                     <b class="fw-medium">ABOUT US</b>
-                  </h2>
+                  <h5 class="page-title fs-4 mb-4">
+                     <b class="fw-medium">PT. Indraco Global Indonesia</b>
+                  </h5>
                   <p class="text-justify">
                      WE ARE INDRACO - Beginning in 1971, producing and distributing coffee, INDRACO continues to advance and expand into several advanced manufacturing facilities and distribution centers across Indonesia and Singapore.
                      <br><br>
@@ -48,10 +89,10 @@
          <div class="container py-4 py-md-5">
             <div class="row gx-md-5 justify-content-center">
                <div class="col col-auto">
-                  <h2 class="page-title fs-4 mb-4 my-md-5" style="max-width: 20rem;">
+                  <h5 class="page-title fs-4 mb-4 my-md-5" style="max-width: 20rem;">
                      <b class="fw-medium">OVER THE YEARS</b>
                      <!-- <b class="fw-medium">SEJARAH PENTING PERJALANAN KAMI</b> -->
-                  </h2>
+                  </h5>
                </div><!-- end col -->
                <div class="col col-12 col-md history-list">
                   <div class="row history-item">
@@ -148,17 +189,17 @@
          <div class="container py-4 py-md-5">
             <div class="row row-gap-4 text-center text-lg-start justify-content-lg-around">
                <div class="col col-12 col-lg-6 col-xl-5">
-                  <h2 class="page-title fs-4 mb-4">
+                  <h5 class="page-title fs-4 mb-4">
                      <b class="fw-medium">OUR VISION</b>
-                  </h2>
+                  </h5>
                   <p>
                      Become a globally recognised company and obtain positive growth whereby accentuating our five core values of "Customer Focus", "Teamwork", "Integrity", "Resources", and "Innovation".
                   </p>
                </div><!-- end col -->
                <div class="col col-12 col-lg-6 col-xl-5">
-                  <h2 class="page-title fs-4 mb-4">
+                  <h5 class="page-title fs-4 mb-4">
                      <b class="fw-medium">OUR MISSION</b>
-                  </h2>
+                  </h5>
                   <p>
                      Provide supreme, top-quality products at competitive prices that meet and surpass consumers' needs. 
                   </p>
@@ -174,9 +215,9 @@
                   <div class="ratio ratio-1x1 mx-auto ms-lg-0" style="width: 6rem;">
                      <img src="../../asset/img/about-customer-focus.svg" class="object-fit-contain" alt="">
                   </div>
-                  <h2 class="page-title fs-4 my-4">
+                  <h5 class="page-title fs-4 my-4">
                      <b class="fw-medium">CUSTOMER FOCUS</b>
-                  </h2>
+                  </h5>
                   <p>
                      We will go the distance to delight our customers, manifesting them into our advocates in the process. Our objective is to create and maintain long term relationships with our customers by generating trust, confidence and loyalty. 
                   </p>
@@ -185,9 +226,9 @@
                   <div class="ratio ratio-1x1 mx-auto ms-lg-0" style="width: 6rem;">
                      <img src="../../asset/img/about-teamwork.svg" class="object-fit-contain" alt="">
                   </div>
-                  <h2 class="page-title fs-4 my-4">
+                  <h5 class="page-title fs-4 my-4">
                      <b class="fw-medium">TEAMWORK</b>
-                  </h2>
+                  </h5>
                   <p>
                      We "Work Together as One Team, As One Indraco". We continue to create harmony and always remember those we work with. 
                   </p>
@@ -196,9 +237,9 @@
                   <div class="ratio ratio-1x1 mx-auto ms-lg-0" style="width: 6rem;">
                      <img src="../../asset/img/about-innovation.svg" class="object-fit-contain" alt="">
                   </div>
-                  <h2 class="page-title fs-4 my-4">
+                  <h5 class="page-title fs-4 my-4">
                      <b class="fw-medium">INNOVATION</b>
-                  </h2>
+                  </h5>
                   <p>
                      We are the people who embrace new mindsets and are proactive in commencing changes and enhancement. 
                   </p>
@@ -207,9 +248,9 @@
                   <div class="ratio ratio-1x1 mx-auto ms-lg-0" style="width: 6rem;">
                      <img src="../../asset/img/about-integrity.svg" class="object-fit-contain" alt="">
                   </div>
-                  <h2 class="page-title fs-4 my-4">
+                  <h5 class="page-title fs-4 my-4">
                      <b class="fw-medium">INTEGRITY</b>
-                  </h2>
+                  </h5>
                   <p>
                      We manage our business ethically and morally. We are convinced that we have gained the trust and respect of our customers and everyone we cooperate with by being transparent, honest and honourable in all our actions. 
                   </p>
@@ -218,9 +259,9 @@
                   <div class="ratio ratio-1x1 mx-auto ms-lg-0" style="width: 6rem;">
                      <img src="../../asset/img/about-resources.svg" class="object-fit-contain" alt="">
                   </div>
-                  <h2 class="page-title fs-4 my-4">
+                  <h5 class="page-title fs-4 my-4">
                      <b class="fw-medium">RESOURCES</b>
-                  </h2>
+                  </h5>
                   <p>
                      We escalate our capacity by optimising our abilities and efficiently utilising all resources. We are the people who confront the most complex challenges that others might consider insurmountable.
                   </p>
@@ -231,9 +272,9 @@
       <div class="container"><hr class="m-0"></div><!-- end container -->
       <section>
          <div class="container py-4 py-md-5">
-            <h2 class="page-title fs-4 mb-4">
+            <h5 class="page-title fs-4 mb-4">
                <b class="fw-medium">FACTORY</b>
-            </h2>
+            </h5>
             <div class="row row-cols-1 row-gap-5">
                <div class="col">
                   <div class="row row-gap-3">
@@ -275,9 +316,9 @@
       <div class="container"><hr class="m-0"></div><!-- end container -->
       <section>
          <div class="container py-4 py-md-5">
-            <h2 class="page-title fs-4 mb-4 text-lg-center">
+            <h5 class="page-title fs-4 mb-4 text-lg-center">
                <b class="fw-medium">GALLERY</b>
-            </h2>
+            </h5>
             <div class="row row-cols-1 row-gap-5 justify-content-lg-end">
                <div class="col">
                   <div class="row row-gap-3">

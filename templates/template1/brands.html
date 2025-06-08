@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="layout/head.js"></script>
+   <title>INDRACO &bull; Brands</title>
+   <style>
+      * {
+         outline: solid 1px green;
+         outline: solid 1px transparent;
+      }
+   
+      .product-list {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+         gap: 1rem;
+   
+         @media (min-width: 1400px) {
+            gap: 1.5rem;
+         }
+   
+         .card-title {
+            font-size: 1em !important;
+         }
+      }
+
+      .logo-header {
+         width: 6rem;
+
+         @media (min-width: 768px) {
+            width: 8rem;
+         }
+      }
+   </style>
+</head>
+<body>
+   <nav>
+      <script src="layout/navbar.js"></script>
+   </nav>
+   <header>
+      <div class="page-title pt-3 d-lg-none">
+         <div class="container d-flex flex-column row-gap-3">
+            <h2 class="fs-4 m-0 text-uppercase">
+               <b class="fw-medium">Brands</b>
+            </h2>
+         </div><!-- end container -->
+      </div><!-- end page title -->
+      <div class="container">
+         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb pt-2 m-0" style="font-size: .875em;">
+               <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+               <li class="breadcrumb-item"><a href="consumer.html">Consumer</a></li>
+               <li class="breadcrumb-item active" aria-current="page">Supresso</li>
+            </ol>
+         </nav>
+      </div><!-- end breadcrumb page -->
+   </header>
+   <main>
+      <section>
+         <div class="container py-4 py-md-5">
+            <header class="mb-4 mb-md-5">
+               <div class="row row-cols-1 text-center row-gap-4 row-cols-md-auto text-md-start justify-content-md-between align-items-md-center">
+                  <div class="col order-md-2">
+                     <img src="../../asset/img/logo-supresso.png" alt="" width="100%" height="auto" class="logo-header">
+                  </div><!-- end col -->
+                  <div class="col order-md-1">
+                     <h5 class="display-4 m-0">
+                        <b class="fw-thin">Coffee</b>
+                        <br>
+                        <b class="fw-medium">Supresso</b>
+                     </h5>
+                  </div><!-- end col -->
+               </div><!-- end row -->
+            </header>
+            <main>
+               <div class="product-list">
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+                  <div class="product-item">
+                     <script src="layout/card-products.js"></script>
+                  </div><!-- end col -->
+               </div><!-- end row -->
+            </main>
+         </div><!-- end container -->
+      </section>
+   </main>
+   <footer>
+      <script src="layout/footbar.js"></script>
+   </footer>
+   <script src="js/global.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('#nav-products').addClass('active');
+      });
+   </script>
+</body>
+</html>

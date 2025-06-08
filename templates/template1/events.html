@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="layout/head.js"></script>
+   <link rel="stylesheet" href="css/products.css">
+   <title>INDRACO &bull; News & Events</title>
+   <style>
+      * {
+         outline: solid 1px green;
+         outline: solid 1px transparent;
+      }
+
+      .events-list>.events-item:last-of-type>hr {
+         display: none;
+      }
+   </style>
+</head>
+<body>
+   <nav>
+      <script src="layout/navbar.js"></script>
+   </nav>
+   <header>
+      <div class="page-title pt-3 d-lg-none">
+         <div class="container d-flex flex-column row-gap-3">
+            <h2 class="fs-4 m-0 text-uppercase">
+               <b class="fw-medium">news & events</b>
+            </h2>
+         </div><!-- end container -->
+      </div><!-- end page title -->
+   </header>
+   <main>
+      <section>
+         <div class="container py-4 py-md-5">
+            <header>
+               <h5 class="display-4 lh-1 text-capitalize">
+                  <b class="fw-thin">china international import expo 2024</b>
+               </h5>
+               <p class="lead">Datang dan sapa kami</p>
+            </header>
+            <div class="row gx-xxl-5 justify-content-lg-between">
+               <div class="col col-12 col-lg-8">
+                  <div class="events-detail">
+                     <table class="table table-borderless">
+                        <tbody>
+                           <tr>
+                              <td class="p-0">No&nbsp;Booth</td>
+                              <td class="py-0">:</td>
+                              <td class="p-0">C2 - 08, Hall 1.2</td>
+                           </tr>
+                           <tr>
+                              <td class="p-0">Tanggal</td>
+                              <td class="py-0">:</td>
+                              <td class="p-0">5-10 November 2024</td>
+                           </tr>
+                           <tr>
+                              <td class="p-0">Venue</td>
+                              <td class="py-0">:</td>
+                              <td class="p-0">National Exhibition and Convention Center (NECC), Shanghai, China</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <hr class="opacity-100 border-2">
+                     <div class="ratio img-ratio ratio-1x1 bg-light">
+                        <img src="../../asset/img/events-POSTER-CIIE.jpg" class="object-fit-cover" alt="">
+                     </div>
+                  </div>
+               </div><!-- end col -->
+               <div class="col col-12 col-lg-auto">
+                  <hr class="opacity-100 border-2 my-4 d-lg-none">
+                  <div class="vr h-100 d-none d-lg-block"></div>
+               </div><!-- end col -->
+               <div class="col col-12 col-lg">
+                  <aside>
+                     <header class="d-grid">
+                        <h5 class="fs-5 mb-4">
+                           <b class="fw-medium">Kalender Acara</b>
+                        </h5>
+                     </header>
+                     <main>
+                        <div class="row events-list row-cols-1 row-cols-md-2 row-cols-lg-1">
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                           <div class="col events-item">
+                              <script src="layout/event-item.js"></script>
+                              <hr>
+                           </div><!-- end col (events item) -->
+                        </div><!-- end row (events list) -->
+                     </main>
+                  </aside>
+               </div><!-- end col -->
+            </div><!-- end row -->
+         </div><!-- end container -->
+      </section>
+   </main>
+   <footer>
+      <script src="layout/footbar.js"></script>
+   </footer>
+   <script src="js/global.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('#nav-events').addClass('active');
+
+         if ($(window).width() >= 992) {
+            var eventsHeight = $('.events-detail').outerHeight();
+            var eventsListHeadHeight = $('body>main aside>header').outerHeight();
+            var eventsListHeight = eventsHeight - eventsListHeadHeight;
+            $('body>main aside>main').css('height', eventsListHeight + 'px');
+            $('body>main aside>main').addClass('overflow-x-hidden overflow-y-scroll');
+         }
+      });
+      </script>
+</body>
+</html>
