@@ -1,5 +1,5 @@
 document.writeln(`
-<a href="brands-detail.html" target="_blank" class="text-decoration-none">
+<a href="brands-detail.html" class="text-decoration-none">
    <div class="card card-product rounded-0 border-0">
       <div class="card-header p-0 border-0">
          <div class="ratio ratio-1x1 img-ratio">

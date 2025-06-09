@@ -8,6 +8,15 @@
          outline: solid 1px green;
          outline: solid 1px transparent;
       }
+
+      .logo-header {
+         width: auto;
+         height: 5rem;
+   
+         @media (min-width: 768px) {
+            height: 6rem;
+         }
+      }
    
       .product-list {
          display: grid;
@@ -22,14 +31,6 @@
             font-size: 1em !important;
          }
       }
-
-      .logo-header {
-         width: 6rem;
-
-         @media (min-width: 768px) {
-            width: 8rem;
-         }
-      }
    </style>
 </head>
 <body>
@@ -37,7 +38,7 @@
       <script src="layout/navbar.js"></script>
    </nav>
    <header>
-      <div class="page-title pt-3 d-lg-none">
+      <div class="page-title pt-3 d-none">
          <div class="container d-flex flex-column row-gap-3">
             <h2 class="fs-4 m-0 text-uppercase">
                <b class="fw-medium">Brands</b>
@@ -60,7 +61,7 @@
             <header class="mb-4 mb-md-5">
                <div class="row row-cols-1 text-center row-gap-4 row-cols-md-auto text-md-start justify-content-md-between align-items-md-center">
                   <div class="col order-md-2">
-                     <img src="../../asset/img/logo-supresso.png" alt="" width="100%" height="auto" class="logo-header">
+                     <img src="../../asset/img/logo-supresso.png" alt="SUPRESSO" class="logo-header">
                   </div><!-- end col -->
                   <div class="col order-md-1">
                      <h5 class="display-4 m-0">
