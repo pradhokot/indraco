@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="layout/head.js"></script>
+   <link rel="stylesheet" href="css/products.css">
+   <title>INDRACO &bull; Career</title>
+   <style>
+      * {
+         outline: solid 1px green;
+         outline: solid 1px transparent;
+      }
+   
+      .vacant-item {
+         padding: 1.5rem 0;
+         
+         .vacant-title {
+            cursor: pointer;
+      
+            &>i.fas {
+               position: absolute;
+               top: 50%;
+               right: 0;
+               transform: translateY(-50%) rotate(0deg);
+               transition: transform .3s ease-in-out;
+            }
+      
+            &.collapsed>i.fas {
+               transform: translateY(-50%) rotate(-180deg);
+            }
+         }
+      }
+   </style>
+</head>
+<body>
+   <nav>
+      <script src="layout/navbar.js"></script>
+   </nav>
+   <header>
+      <div class="page-title pt-3 d-none">
+         <div class="container d-flex flex-column row-gap-3">
+            <h2 class="fs-4 m-0 text-uppercase">
+               <b class="fw-medium">career</b>
+            </h2>
+         </div><!-- end container -->
+      </div><!-- end page title -->
+      <script src="layout/banner-career.js"></script>
+   </header>
+   <main>
+      <section>
+         <div class="container pb-4 pb-md-5">
+            <div class="row row-cols-1 row-gap-4 row-gap-md-5">
+               <div class="col">
+                  <p class="text-justify my-4">
+                     We seek talent for suitable jobs at various levels of the organization. Process Recruitment is carried out selectively in order to get the best employee candidates. Here's the flow of the recruitment process at INDRACO GLOBAL INDONESIA starting from sending applications to the employee acceptance stage.
+                  </p>
+                  <div class="row row-cols-3 g-3 row-cols-md-5 justify-content-md-evenly">
+                     <div class="col">
+                        <figure class="figure text-center w-100">
+                           <img src="../../asset/img/icon-career-tahap1.svg" class="figure-img img-fluid w-50" alt="...">
+                           <figcaption class="figure-caption lh-sm fs-6">
+                              1. <br> Admission Application  <!-- Aplikasi Masuk -->
+                           </figcaption>
+                        </figure>
+                     </div><!-- end col -->
+                     <div class="col">
+                        <figure class="figure text-center w-100">
+                           <img src="../../asset/img/icon-career-tahap2.svg" class="figure-img img-fluid w-50" alt="...">
+                           <figcaption class="figure-caption lh-sm fs-6">
+                              2. <br> Written Test & Skill Test <!-- Tes Tertulis & Tes Keahlian -->
+                           </figcaption>
+                        </figure>
+                     </div><!-- end col -->
+                     <div class="col">
+                        <figure class="figure text-center w-100">
+                           <img src="../../asset/img/icon-career-tahap3.svg" class="figure-img img-fluid w-50" alt="...">
+                           <figcaption class="figure-caption lh-sm fs-6">
+                              3. <br> Interview
+                           </figcaption>
+                        </figure>
+                     </div><!-- end col -->
+                     <div class="col">
+                        <figure class="figure text-center w-100">
+                           <img src="../../asset/img/icon-career-tahap4.svg" class="figure-img img-fluid w-50" alt="...">
+                           <figcaption class="figure-caption lh-sm fs-6">
+                              4. <br> Medical Checkup
+                           </figcaption>
+                        </figure>
+                     </div><!-- end col -->
+                     <div class="col">
+                        <figure class="figure text-center w-100">
+                           <img src="../../asset/img/icon-career-tahap5.svg" class="figure-img img-fluid w-50" alt="...">
+                           <figcaption class="figure-caption lh-sm fs-6">
+                              5. <br> Welcome to Join <!-- Selamat Bergabung -->
+                           </figcaption>
+                        </figure>
+                     </div><!-- end col -->
+                  </div><!-- end row -->
+               </div><!-- end col -->
+               <div class="col">
+                  <div class="text-center">
+                     <h5 class="fs-3 lh-base">
+                        <b class="fw-medium">Job Vacancies</b><!-- ada lowongan -->
+                        <b class="fw-medium text-danger">Sorry, we are not currently hiring!</b><!-- tidak ada lowongan -->
+                     </h5>
+                  </div>
+               </div><!-- end col -->
+               <div class="col">
+                  <div class="row row-cols-1 g-2 row-cols-md-2">
+                     <div class="col">
+                        <div class="input-group bg-whitesmoke">
+                           <input type="search" class="form-control rounded-0 border-0 bg-light shadow-none" placeholder="Search Jobs">
+                           <button class="btn rounded-0 border-0 bg-light shadow-none"><i class="fas fa-search"></i></button>
+                        </div>
+                     </div><!-- end col -->
+                     <div class="col">
+                        <select name="" id="" class="form-select rounded-0 border-0 bg-light shadow-none">
+                           <option value="0" selected>Searching according to position level</option>
+                           <option value="1">Divisi</option>
+                           <option value="2">Kota</option>
+                           <option value="3">Fresh Graduate</option>
+                        </select>
+                     </div><!-- end col -->
+                  </div><!-- end row -->
+               </div><!-- end col -->
+               <div class="col">
+                  <ul class="vacant-list list-group list-group-flush">
+                     <li class="vacant-item list-group-item border-dark-subtle">
+                        <div class="row">
+                           <div class="col col-12 col-md order-md-1">
+                              <h5 class="vacant-title fs-4 text-capitalize position-relative collapsed d-md-inline-flex pe-md-5" data-bs-toggle="collapse" data-bs-target="#collapse-vaccant1">
+                                 <b class="fw-medium">
+                                    Web Developer Staff
+                                 </b>
+                                 <i class="fas fa-chevron-up"></i>
+                              </h5>
+                              <p>
+                                 <small> Level : Fresh Graduate <br> Berlaku Hingga : 20 Apr 2025</small>
+                              </p>
+                           </div><!-- end col -->
+                           <div class="col col-12 order-md-3">
+                              <div class="collapse" id="collapse-vaccant1">
+                                 <h5 class="fs-reset"><b class="fw-medium">Kualifikasi :</b></h5>
+                                 <ol class="mb-4">
+                                    <li>Sarjana Min, IPK min 3,00, Semua Jurusan (Nutrisi/Kesehatan Masyarakat akan lebih diutamakan) - Usia maksimal 30 tahun</li>
+                                    <li>Baik dalam Berpikir Analitis</li>
+                                    <li>Baik dalam Keterampilan Komunikasi dan Interpersonal</li>
+                                    <li>Baik dalam Keterampilan Presentasi</li>
+                                    <li>Baik dalam Negosiasi dan Kerjasama Tim</li>
+                                    <li>Aktif dalam organisasi, bermotivasi tinggi untuk bekerja, cepat belajar, berorientasi pada target</li>
+                                    <li>Siap bekerja lintas kota dan memiliki SIM (SIM A)</li>
+                                 </ol>
+                                 <h5 class="fs-reset"><b class="fw-medium">Deskripsi Pekerjaan :</b></h5>
+                                 <ol class="mb-4">
+                                    <li>Menjelaskan produk kepada para Health Care Professional</li>
+                                    <li>Mencapai target penjualan dan kunjungan yang efektif di institusi</li>
+                                    <li>Mendapatkan jumlah pelanggan dan tingkatkan rekomendasi pelanggan terhadap produk</li>
+                                    <li>Melaksanakan program promosi untuk branding dan meningkatkan endorsement di institusi</li>
+                                 </ol>
+                              </div><!-- end collapse -->
+                           </div><!-- end col -->
+                           <div class="col col-12 col-md-auto order-md-2">
+                              <a href="career-form.html" class="btn btn-outline-dark rounded-0 w-100 px-5">
+                                 Apply
+                              </a>
+                           </div><!-- end col -->
+                        </div><!-- end row -->
+                     </li><!-- end vacant item -->
+                     <li class="vacant-item list-group-item border-dark-subtle">
+                        <div class="row">
+                           <div class="col col-12 col-md order-md-1">
+                              <h5 class="vacant-title fs-4 text-capitalize position-relative collapsed d-md-inline-flex pe-md-5" data-bs-toggle="collapse" data-bs-target="#collapse-vaccant2">
+                                 <b class="fw-medium">
+                                    Digital Marketing Staff
+                                 </b>
+                                 <i class="fas fa-chevron-up"></i>
+                              </h5>
+                              <p>
+                                 <small> Level : Fresh Graduate <br> Berlaku Hingga : 20 Apr 2025</small>
+                              </p>
+                           </div><!-- end col -->
+                           <div class="col col-12 order-md-3">
+                              <div class="collapse" id="collapse-vaccant2">
+                                 <h5 class="fs-reset"><b class="fw-medium">Kualifikasi :</b></h5>
+                                 <ol class="mb-4">
+                                    <li>Sarjana Min, IPK min 3,00, Semua Jurusan (Nutrisi/Kesehatan Masyarakat akan lebih diutamakan) - Usia maksimal 30 tahun</li>
+                                    <li>Baik dalam Berpikir Analitis</li>
+                                    <li>Baik dalam Keterampilan Komunikasi dan Interpersonal</li>
+                                    <li>Baik dalam Keterampilan Presentasi</li>
+                                    <li>Baik dalam Negosiasi dan Kerjasama Tim</li>
+                                    <li>Aktif dalam organisasi, bermotivasi tinggi untuk bekerja, cepat belajar, berorientasi pada target</li>
+                                    <li>Siap bekerja lintas kota dan memiliki SIM (SIM A)</li>
+                                 </ol>
+                                 <h5 class="fs-reset"><b class="fw-medium">Deskripsi Pekerjaan :</b></h5>
+                                 <ol class="mb-4">
+                                    <li>Menjelaskan produk kepada para Health Care Professional</li>
+                                    <li>Mencapai target penjualan dan kunjungan yang efektif di institusi</li>
+                                    <li>Mendapatkan jumlah pelanggan dan tingkatkan rekomendasi pelanggan terhadap produk</li>
+                                    <li>Melaksanakan program promosi untuk branding dan meningkatkan endorsement di institusi</li>
+                                 </ol>
+                              </div><!-- end collapse -->
+                           </div><!-- end col -->
+                           <div class="col col-12 col-md-auto order-md-2">
+                              <a href="career-form.html" class="btn btn-outline-dark rounded-0 w-100 px-5">
+                                 Apply
+                              </a>
+                           </div><!-- end col -->
+                        </div><!-- end row -->
+                     </li><!-- end vacant item -->
+                  </ul><!-- end vacant -->
+               </div><!-- end col -->
+            </div><!-- end row -->
+         </div><!-- end container -->
+      </section>
+   </main>
+   <footer>
+      <script src="layout/footbar.js"></script>
+   </footer>
+   <script src="js/global.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('#nav-career').addClass('active');
+      });
+   </script>
+</body>
+</html>
