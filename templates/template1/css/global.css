@@ -129,6 +129,24 @@ textarea::placeholder,
    }
 }
 
+.form-check-input,
+.form-check-label {
+   cursor: pointer;
+}
+
+.form-check-input {
+   background-color: var(--bs-light);
+   
+   &:checked {
+      background-color: var(--bs-dark);
+   }
+   
+   &:checked[type="radio"] {
+      --bs-form-check-bg-image: url() !important;
+   }
+}
+
+
 
 
 /* --------------------- NAVBAR */
