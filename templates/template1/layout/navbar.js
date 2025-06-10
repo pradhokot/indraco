@@ -77,7 +77,7 @@ document.writeln(`
                   <div class="vr h-75 position-absolute top-50 start-50 translate-middle"></div>
                </li>
                <li class="nav-item">
-                  <a href="brochures.html" target="_blank" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-brochures">
+                  <a href="brochures.html" class="nav-link px-lg-3 text-uppercase text-reset link-hover" id="nav-brochures">
                      <b class="fw-medium">brochures</b>
                   </a>
                </li>
