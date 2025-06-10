@@ -8,12 +8,12 @@ document.writeln(`
       <div class="row g-0 flex-nowrap">
          <div class="col col-12 col-lg-auto">
             <nav class="nav nav-pills flex-column" role="tablist">
-               <a href="#" class="nav-link rounded-0 text-reset p-0" id="nav-ecomm">
+               <a href="stores.html" class="nav-link rounded-0 text-reset p-0" id="nav-ecomm">
                   <span data-bs-toggle="pill" data-bs-target="#tab-ecomm" class="d-flex w-100 py-2 link-hover">
                      E-commerce
                   </span>
                </a>
-               <a href="#" class="nav-link rounded-0 text-reset p-0" id="nav-marketplace">
+               <a href="stores.html" class="nav-link rounded-0 text-reset p-0" id="nav-marketplace">
                   <span data-bs-toggle="pill" data-bs-target="#tab-marketplace" class="d-flex w-100 py-2 link-hover">
                      marketplace
                   </span>
