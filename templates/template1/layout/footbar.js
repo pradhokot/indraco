@@ -36,7 +36,7 @@ document.writeln(`
          </div><!-- end col -->
          <div class="col col-12 col-md-auto order-lg-3 me-md-5 me-lg-0">
             <h5 class="mb-3 d-none d-lg-block fs-reset">
-               <b class="fw-bold">CONTACT US</b>
+               <b class="fw-medium">CONTACT US</b>
             </h5>
             <address class="mb-0">
                <a href="#" target="_blank" class="text-reset link-hover link-hover-underline">
@@ -52,7 +52,7 @@ document.writeln(`
          </div><!-- end col -->
          <div class="col col-12 col-md-auto order-lg-2">
             <h5 class="mb-3 d-none d-lg-block fs-reset">
-               <b class="fw-bold">LINKS</b>
+               <b class="fw-medium">LINKS</b>
             </h5>
             <ul class="list-unstyled nav-links mb-0">
                <li>
