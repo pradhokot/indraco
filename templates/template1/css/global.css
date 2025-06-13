@@ -158,6 +158,10 @@ textarea::placeholder,
    transform: none;
    transition: .3s ease-in-out;
 
+   @media (min-width: 992px) {
+      font-size: .875em;
+   }
+
    .navbar-top {
       .container {
          display: grid;

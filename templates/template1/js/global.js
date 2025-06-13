@@ -20,6 +20,10 @@ $(document).ready(function () {
    $(window).on('scroll', function () {
       $('.navbar').toggleClass('toggle-scroll', prevScrollpos <= $(this).scrollTop());
       prevScrollpos = $(this).scrollTop();
+
+      $('.btn-to-top').click(function() {
+         $(window).scrollTop('0');
+      });
    });
    
    // Responsive: klik di mobile, hover di desktop
