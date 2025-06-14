@@ -97,7 +97,7 @@ document.writeln(`
       <div class="row row-cols-1 row-cols-lg-auto text-center justify-content-lg-between">
          <div class="col">
             <p>
-               &copy; 2021 - <script>document.write(new Date().getFullYear())</script> INDRACO. All rights reserved
+               &copy; 1971 - <script>document.write(new Date().getFullYear())</script> INDRACO. All rights reserved
             </p>
          </div><!-- end col -->
          <div class="col">
