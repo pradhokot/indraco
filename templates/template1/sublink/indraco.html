@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <script src="layout/head.js"></script>
+   <script src="../layout/head.js"></script>
    <title>INDRACO &bull; Roasting Fine Exquisite Coffee Since 1971</title>
    <style>
       * {
@@ -24,9 +24,18 @@
             background-color: transparent;
             color: currentColor;
 
+            &>.container {
+               transition: .3s ease-in-out;
+            }
+
             &:hover {
                background-color: var(--bs-body-color);
                color: white;
+
+               &>.container {
+                  padding-left: 2rem;
+                  padding-right: 2rem;
+               }
             }
 
             &:last-child {
@@ -197,6 +206,6 @@
          </div><!-- end row -->
       </div><!-- end container -->
    </footer>
-   <script src="js/global.js"></script>
+   <script src="../js/global.js"></script>
 </body>
 </html>
