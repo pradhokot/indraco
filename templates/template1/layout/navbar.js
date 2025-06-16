@@ -1,5 +1,5 @@
 document.writeln(`
-<div class="navbar navbar-expand-lg d-block text-capitalize fixed-top py-0">
+<div class="navbar navbar-expand-lg d-block text-capitalize fixed-top py-0" style="z-index: 1035;">
    <div class="navbar-top">
       <div class="container py-3 pb-lg-2 pt-lg-5">
          <div class="navtop-start d-lg-none">
@@ -113,9 +113,5 @@ document.writeln(`
       </div>
    </div><!-- end navbar bottom -->
 </div><!-- end navbar -->
-<div class="fixed-bottom m-2 m-md-3 m-xl-4" style="left: unset;">
-   <button class="btn btn-to-top btn-dark" style="width: 3rem; height: 3rem;">
-      <i class="fas fa-chevron-up fa-xl"></i>
-   </button>
-</div>
+<script src="layout/btn-to-top.js"></script>
 `)
