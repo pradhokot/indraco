@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="color-scheme" content="light dark">
+   <title>Document</title>
+   <style>
+      [data-bs-theme="light"] {
+         --bg: #ffffff;
+         --text: #222222;
+      }
+
+      [data-bs-theme="dark"] {
+         --bg: #1e1e1e;
+         --text: #eeeeee;
+      }
+
+      body {
+         background-color: var(--bg);
+         color: var(--text);
+      }
+
+      #themeToggle {
+         background: none;
+         border: none;
+         cursor: pointer;
+         color: var(--text);
+      }
+
+      /* default */
+      .icon-sun,
+      .icon-moon {
+         transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      /* Light → tampilkan moon */
+      [data-bs-theme="light"] .icon-sun {
+         opacity: 0;
+         transform: scale(0.7);
+      }
+
+      [data-bs-theme="light"] .icon-moon {
+         opacity: 1;
+      }
+
+      /* Dark → tampilkan sun */
+      [data-bs-theme="dark"] .icon-moon {
+         opacity: 0;
+         transform: scale(0.7);
+      }
+
+      [data-bs-theme="dark"] .icon-sun {
+         opacity: 1;
+      }
+   </style>
+</head>
+
+<body>
+   <button id="themeToggle" aria-label="Toggle theme">
+      <svg class="theme-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+         <!-- Sun -->
+         <g class="icon-sun">
+            <circle cx="12" cy="12" r="5" fill="currentColor" />
+            <g stroke="currentColor" stroke-width="2">
+               <line x1="12" y1="1" x2="12" y2="4" />
+               <line x1="12" y1="20" x2="12" y2="23" />
+               <line x1="1" y1="12" x2="4" y2="12" />
+               <line x1="20" y1="12" x2="23" y2="12" />
+               <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+               <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+               <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+               <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+            </g>
+         </g>
+
+         <!-- Moon -->
+         <g class="icon-moon">
+            <path d="M21 12.8A9 9 0 1111.2 3
+           a7 7 0 109.8 9.8z" fill="currentColor" />
+         </g>
+      </svg>
+   </button>
+
+
+   <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem praesentium nihil odio ea ab iste officia
+      commodi veritatis dolorum nostrum at suscipit quidem, modi nobis soluta! Assumenda mollitia repellendus nobis!
+   </p>
+
+   <script>
+      (function () {
+         const toggleBtn = document.getElementById('themeToggle');
+         const root = document.documentElement;
+
+         // Ambil tema tersimpan atau preferensi sistem
+         const getPreferredTheme = () => {
+            const saved = localStorage.getItem('theme');
+            if (saved) return saved;
+
+            return window.matchMedia('(prefers-color-scheme: dark)').matches
+               ? 'dark'
+               : 'light';
+         };
+
+         // Set tema
+         const setTheme = (theme) => {
+            root.setAttribute('data-bs-theme', theme);
+            localStorage.setItem('theme', theme);
+         };
+
+         // Init tema
+         setTheme(getPreferredTheme());
+
+         // Toggle saat klik
+         toggleBtn.addEventListener('click', () => {
+            const current = root.getAttribute('data-bs-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            setTheme(next);
+         });
+
+         // Listen perubahan tema sistem (jika user belum memilih manual)
+         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('theme')) {
+               setTheme(e.matches ? 'dark' : 'light');
+            }
+         });
+      })();
+   </script>
+
+</body>
+
+</html>
