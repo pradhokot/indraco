@@ -1,0 +1,21 @@
+.link-hover,
+.link-hover-underline {
+   color: currentColor;
+   text-decoration: none;
+   font-size: 1em;
+   opacity: .75;
+   transition: .3s ease;
+}
+
+.link-hover:hover, .link-hover:focus, .link-hover.active {opacity: 1;}
+
+.link-hover-underline:hover,
+.link-hover-underline:focus,
+.link-hover-underline.active {
+   opacity: 1;
+   text-decoration: underline;
+}
+
+.last-item-none>*:last-child, .last-item-none>*:last-of-type {display: none;}
+
+.text-reset {font-size: 1em;}

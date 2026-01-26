@@ -1,0 +1,30 @@
+body {
+   min-height: 100dvh;
+   display: flex;
+   flex-direction: column;
+}
+
+body>main {flex-grow: 1;}
+
+body>footer {
+   background-color: #333333;
+   color: white;
+}
+
+body>footer .copyright {background-color: #111111;}
+
+nav[aria-label="Social media navigation"]>a {
+   width: 32px;
+   height: 32px;
+}
+
+nav[aria-label="Social media navigation"]>a>svg {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1);
+}
+
+@media (min-width: 992px) {
+   body>footer address {max-width: 14.5em;}
+}
