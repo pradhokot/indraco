@@ -19,3 +19,21 @@
 .last-item-none>*:last-child, .last-item-none>*:last-of-type {display: none;}
 
 .text-reset {font-size: 1em;}
+
+.group-card {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 1rem;
+}
+
+.text-justify {
+   text-align: justify !important;
+}
+
+
+
+
+@media (min-width: 576px) {
+   .group-card.product-list {grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));}
+   .group-card.product-list>*{max-width: 360px;}
+}

@@ -1,9 +1,9 @@
 document.writeln(`
    <footer class="pt-3 small">
-      <div class="container py-4">
+      <div class="container py-4 py-lg-5">
          <div class="row row-gap-4 gx-lg-5 justify-content-lg-between">
             <div class="col col-12 col-lg-auto order-lg-1 d-flex flex-wrap align-items-center column-gap-3 justify-content-between flex-lg-column flex-lg-nowrap align-items-lg-start">
-               <div class="text-reset fw-medium text-uppercase mb-3 flex-lg-grow-1 opacity-50">
+               <div class="text-reset fw-bold text-uppercase mb-3 flex-lg-grow-1 opacity-50">
                   <img src="../assets/images/template2/logo-indraco-light.png" alt="INDRACO Logo" loading="lazy" class="w-100 img-fluid" style="max-width: 17em;">
                   <br><small class="small text-capitalize">Roasting Fine Exquisite Coffee Since 1971</small>
                </div>
@@ -29,7 +29,7 @@ document.writeln(`
                </nav>
             </div>
             <div class="col col-12 col-md-6 col-lg-auto order-lg-3">
-               <div class="fs-6 fw-medium text-uppercase mb-3 d-none d-lg-block">hubungi kami</div>
+               <div class="fs-6 fw-bold text-uppercase mb-3 d-none d-lg-block">hubungi kami</div>
                <address>
                   <a href="https://maps.app.goo.gl/QFxLopT45ZBAvngk6" target="_blank" class="link-hover-underline">Jl. Semeru No. 133-135 Bambe, Kec. Driyorejo. Gresik 61177 Jawa Timur - Indonesia</a>
                   <br><br>
@@ -41,7 +41,7 @@ document.writeln(`
                </address>
             </div>
             <div class="col col-12 col-md-6 col-lg-auto order-lg-2">
-               <div class="fs-6 fw-medium text-uppercase mb-3 d-none d-lg-block">laman produk</div>
+               <div class="fs-6 fw-bold text-uppercase mb-3 d-none d-lg-block">laman produk</div>
                <ul class="list-unstyled d-flex flex-wrap gap-2 column-gap-3 d-lg-grid column-gap-lg-5" style="grid-template-columns: repeat(2, 1fr);">
                   <li><a href="#" class="link-hover-underline"><i class="fas fa-chevron-right fs-sm"></i> Supresso</a></li>
                   <li><a href="#" class="link-hover-underline"><i class="fas fa-chevron-right fs-sm"></i> BaliCafé</a></li>
@@ -58,7 +58,7 @@ document.writeln(`
             </div>
          </div>
       </div>
-      <div class="copyright py-3">
+      <div class="copyright py-3 py-lg-4">
          <div class="container d-lg-flex column-gap-lg-5">
             <p class="opacity-50">
                &copy;

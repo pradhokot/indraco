@@ -11,26 +11,204 @@
    <link rel="stylesheet" href="css/theme.css">
    <link rel="stylesheet" href="css/custom.css">
    <link rel="stylesheet" href="css/frontend.css">
+   <style>
+      .hero-banner {aspect-ratio: 3/4;}
+
+      .videotron {
+         width: auto;
+         height: 150%;
+      }
+
+      @media (min-width: 768px) {
+         .hero-banner {aspect-ratio: 4/3;}
+      }
+
+      @media (min-width: 992px) {
+         .hero-banner {aspect-ratio: 21/9;}
+
+         .videotron {
+            width: 110%;
+            height: auto;
+         }
+      }
+   </style>
 </head>
 <body>
    <h1 class="visually-hidden">INDRACO</h1>
    <script src="component/header.js"></script>
    <script src="component/aside.js"></script>
    <main>
-      <section class="hero-banner vh-100">
+
+      <section class="hero-banner position-relative overflow-hidden">
+         <div class="videotron position-absolute top-50 start-50 translate-middle" style="aspect-ratio: 16/9;">
+            <div class="ratio ratio-16x9 overflow-hidden pointer-event-none">
+               <iframe class="position-absolute top-50 start-50 translate-middle w-100 h-100" src="https://www.youtube.com/embed/ePqLLciPHKg?autoplay=1&mute=1&loop=1&playlist=ePqLLciPHKg&controls=0&modestbranding=1&rel=0&playsinline=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+         </div>
+         <div class="z-1 video-overlay position-absolute bg-black pointer-event-none opacity-75" style="inset: 0;"></div>
          <h2 class="visually-hidden">Section hero banner</h2>
-         <div class="banner-caption">
-            <p class="display-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <div class="banner-caption z-2 position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center p-4">
+            <div class="container">
+               <div class="text-white" style="max-width: 640px;">
+                  <p class="display-5 fw-bold">Mendekatkan Rasa, Menghubungkan Kehidupan.</p>
+                  <p class="lead mb-4">Dari secangkir kopi hingga berbagai produk sehari-hari, INDRACO hadir untuk membuat hidup lebih hangat, praktis, dan bermakna.</p>
+                  <a href="#" class="btn btn-primary rounded-0">Pelajari Lanjut</a>
+               </div>
+            </div>
          </div>
       </section>
-      <section>
-         <div class="container">
+
+      <section class="py-5">
+         <div class="container py-lg-5">
             <h2 class="visually-hidden">section about us</h2>
-            <p>
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aut molestias nostrum nemo. Laudantium, tempore iure, odio molestias dignissimos explicabo repellendus culpa necessitatibus quae itaque distinctio modi, repudiandae quod ex?
-            </p>
+            <div class="row row-cols-1 row-gap-5 row-cols-lg-2 gx-lg-5 align-items-lg-center">
+
+               <div class="col">
+                  <img src="../assets/images/template2/our-team.png" alt="" loading="lazy" class="w-100 img-fluid">
+               </div>
+
+               <div class="col">
+                  <h3 class="mb-4">
+                     <strong class="fw-bold">PT. Indraco Global Indonesia</strong>
+                  </h3>
+                  <p class="text-justify">
+                     Kami INDRACO - Dimulai pada tahun 1971 dengan gudang di Sumatera oleh pendiri kami, kami telah terus tumbuh dan berkembang menjadi beberapa fasilitas manufaktur canggih di seluruh Indonesia dan Singapura.
+                     <br><br>
+                     Di INDRACO, kami berusaha untuk berinovasi dalam industri yang selalu berubah dan dapat beroperasi dengan kecerdasan dan kreativitas yang dengan bangga kami bawa dan tanamkan dalam semua usaha kami, sejak momen pendirian kami. 
+                  </p>
+               </div>
+
+            </div>
          </div>
       </section>
+
+      <section class="py-5">
+         <div class="container py-lg-5">
+            <h2 class="visually-hidden">section our business</h2>
+            <div class="d-flex flex-column gap-5">
+               <h3 class="fs-1 fw-bold text-center text-lg-start">Fokus Usaha</h3>
+               <div class="group-card gap-md-4 gap-xl-5">
+                  
+                  <article class="card p-5">
+                     <div class="ratio ratio-1x1 w-25 mb-3">
+                        <img src="../assets/images/template2/landing-icon-distribution.png" alt="" loading="lazy" class="object-fit-contain">
+                     </div>
+                     <h4 class="card-title fw-bold mb-3">Jalur-jalur Distribusi</h4>
+                     <p class="card-text">
+                        Kami mengandalkan sistem distribusi dengan beberapa jalur pendukung, membawa misi dan layanan kami ke seluruh penjuru negeri.
+                     </p>
+                  </article>
+
+                  <article class="card p-5">
+                     <div class="ratio ratio-1x1 w-25 mb-3">
+                        <img src="../assets/images/template2/landing-icon-market.png" alt="" loading="lazy" class="object-fit-contain">
+                     </div>
+                     <h4 class="card-title fw-bold mb-3">Belanja Online</h4>
+                     <p class="card-text">
+                        Portal belanja yang terintegrasi dengan user interface yang memudahkan konsumen mencari, memilih dan menikmati produk dan layanan kami.
+                     </p>
+                  </article>
+
+                  <article class="card p-5">
+                     <div class="ratio ratio-1x1 w-25 mb-3">
+                        <img src="../assets/images/template2/landing-icon-F&B.png" alt="" loading="lazy" class="object-fit-contain">
+                     </div>
+                     <h4 class="card-title fw-bold mb-3">Layanan F&B</h4>
+                     <p class="card-text">
+                        Layanan F&B yang kami jalankan menggunakan keahlian tim kami, berfokus pada pengalaman konsumen dalam menikmati makanan dan minuman. 
+                     </p>
+                  </article>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="py-5">
+         <div class="container py-lg-5">
+            <h2 class="visually-hidden">section our market</h2>
+            <div class="row row-cols-1 row-gap-5 row-cols-lg-2 gx-xxl-5 align-items-lg-end gx-lg-5">
+
+               <div class="col">
+                  <h3 class="visually-hidden">our customers</h3>
+                  <div class="mb-4 lh-1" style="max-width: 25rem;">
+                     <div class="fs-4"><i>LEBIH DARI</i></div>
+                     <div class="fw-bold text-primary text-center my-2" style="font-size: 4em;">1.000.000+</div>
+                     <div class="fs-4 text-end"><i>PELANGGAN PERCAYA</i></div>
+                  </div>
+                  <p class="text-justify mb-4">
+                     Kami terus mengembangkan relasi bisnis dan terbuka untuk hubungan potensial yang saling menguntungkan di dalam lingkup lokal maupun internasional. Jika Anda memiliki tujuan dan misi yang sama, silakan hubungi kami. Setiap ide dan masukan dalam pengembangan bisnis akan sangat bernilai, dan kami harap dapat bekerjasama dengan Anda segera.
+                  </p>
+                  <a href="#" class="btn btn-primary rounded-0">
+                     Hubungi Kami
+                  </a>
+               </div>
+
+               <div class="col">
+                  <h3 class="visually-hidden">official store</h3>
+                  <h4 class="mb-4">
+                     <img src="../assets/images/template2/logo-indracostore.png" alt="Logo INDRACO Store" loading="lazy" class="w-100 img-fluid" style="max-width: 21rem;">
+                  </h4>
+                  <p class="text-justify mb-4">
+                     INDRACO Store memberikan layanan yang memudahkan bagi para konsumen Indraco untuk mendapatkan berbagai produk mulai dari produk kopi, coklat, jahe dan semua yang diproduksi oleh Indraco. Semuanya bisa didapatkan hanya dengan beberapa langkah mudah dan sederhana, maka produk pesanan Anda akan kami kirimkan langsung ke rumah Anda.
+                  </p>
+                  <a href="#" class="btn btn-primary rounded-0">
+                     Beli Sekarang
+                  </a>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <section class="py-5">
+         <div class="container py-lg-5">
+            <h2 class="visually-hidden">section contact us</h2>
+            <div class="d-flex flex-column gap-5 flex-lg-row">
+               <h3 class="fs-1 fw-bold text-center flex-lg-grow-0 text-lg-start">
+                  <span class="border-bottom border-4 border-primary">Hubungi Kami</span>
+               </h3>
+               <address class="group-card flex-lg-grow-1 gap-xxl-4">
+
+                  <article class="card p-5">
+                     <div class="ratio ratio-1x1 w-25 mb-3">
+                        <img src="../assets/images/template2/landing-icon-office.png" alt="" loading="lazy" class="object-fit-contain">
+                     </div>
+                     <h4 class="card-title fw-bold mb-3">Kantor Kami</h4>
+                     <p class="card-text">
+                        <a href="#" target="_blank">
+                           Jl. Semeru No. 133-135 Bambe, Kec. Driyorejo. Gresik 61177 Jawa Timur - Indonesia
+                        </a>
+                     </p>
+                  </article>
+
+                  <article class="card p-5">
+                     <div class="ratio ratio-1x1 w-25 mb-3">
+                        <img src="../assets/images/template2/landing-icon-phone.png" alt="" loading="lazy" class="object-fit-contain">
+                     </div>
+                     <h4 class="card-title fw-bold mb-3">Telepon</h4>
+                     <p class="card-text">
+                        <b>T</b>. +62 31 766 8777
+                        <br>
+                        <b>T</b>. +62 31 766 7388
+                        <br>
+                        <b>F</b>. +62 31 766 9590
+                     </p>
+                  </article>
+
+                  <article class="card p-5">
+                     <div class="ratio ratio-1x1 w-25 mb-3">
+                        <img src="../assets/images/template2/landing-icon-email.png" alt="" loading="lazy" class="object-fit-contain">
+                     </div>
+                     <h4 class="card-title fw-bold mb-3">Email</h4>
+                     <p class="card-text">info@indraco.com </p>
+                  </article>
+
+               </address>
+            </div>
+         </div>
+      </section>
+      
    </main>
    <script src="component/footer.js"></script>
    <script src="../assets/vendors/jquery-3.7.1.min.js"></script>

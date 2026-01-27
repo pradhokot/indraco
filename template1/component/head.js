@@ -6,5 +6,5 @@ document.writeln(`
 <link rel="stylesheet" href="../assets/vendors/fontawesome-free-6.7.2-web/css/all.min.css">
 <link rel="stylesheet" href="../assets/fonts/HelveticaNeue/HelveticaNeue.css">
 <link rel="stylesheet" href="css/global.css">
-<script src="../assets/vendors/jquery-3.7.1.min.js.js"></script>
+<script src="../assets/vendors/jquery-3.7.1.min.js"></script>
 <script src="../assets/vendors/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>`)

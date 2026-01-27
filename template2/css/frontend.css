@@ -1,3 +1,51 @@
+[data-bs-theme=light] {
+   --bs-primary: #01645b;
+   --bs-primary-rgb: 1, 100, 91;
+   --bs-primary-subtle: #01534c;
+   --banner-bg: #999999;
+   --card-bg: #e6e7e8;
+   --card-color: #262626;
+}
+
+[data-bs-theme=dark] {
+   --bs-primary: #01645b;
+   --bs-primary-rgb: 1, 100, 91;
+   --bs-primary-subtle: #01534c;
+   --banner-bg: #404041;
+   --card-bg: #333333;
+   --card-color: #e6e7e8;
+}
+
+.btn-primary {
+   --bs-btn-bg: var(--bs-primary);
+   --bs-btn-border-color: var(--bs-primary);
+   --bs-btn-hover-bg: var(--bs-primary-subtle);
+   --bs-btn-hover-border-color: var(--bs-primary-subtle);
+   --bs-btn-active-bg: var(--bs-primary-subtle);
+   --bs-btn-active-border-color: var(--bs-primary-subtle);
+   --bs-btn-disabled-bg: var(--bs-primary);
+   --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+
+
+
+
+.hero-banner {background-color: var(--banner-bg);}
+
+.card {
+   background-color: var(--card-bg);
+   color: var(--card-color);
+   border-radius: 0;
+   border-width: 0;
+   height: 100%;
+   padding: 1.5rem;
+}
+
+
+
+
+
 body {
    min-height: 100dvh;
    display: flex;
@@ -24,6 +72,10 @@ nav[aria-label="Social media navigation"]>a>svg {
    left: 50%;
    transform: translate(-50%, -50%) scale(1);
 }
+
+
+
+
 
 @media (min-width: 992px) {
    body>footer address {max-width: 14.5em;}
