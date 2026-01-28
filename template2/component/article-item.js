@@ -4,9 +4,9 @@ document.writeln(`
          <img src="../assets/images/template2/gallery.jpg" alt="" loading="lazy" class="w-100 img-fluid z-0">
          <div class="z-1 inset-0 inset-article"></div>
          <div class="z-2 top-unset bottom-0 h-auto p-3">
-            <h4 class="text-reset fw-bold line-clamp-3 mb-0">
+            <h3 class="text-reset fw-bold line-clamp-3 mb-0">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis ipsam impedit atque ipsa blanditiis unde ab placeat vero amet! Eaque, explicabo! Sed at ut similique eveniet culpa illo eligendi.
-            </h4>
+            </h3>
          </div>
       </div>
       <div class="card-body text-bg-primary">

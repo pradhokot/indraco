@@ -33,7 +33,7 @@
 
 
 
-.hero-banner {background-color: var(--banner-bg);}
+.hero-banner, .hero-banner .carousel-item {background-color: var(--banner-bg);}
 
 .card {
    background-color: var(--card-bg);
