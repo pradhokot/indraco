@@ -4,7 +4,7 @@ document.writeln(`
          <div class="row row-gap-4 gx-lg-5 justify-content-lg-between">
             <div class="col col-12 col-lg-auto order-lg-1 d-flex flex-wrap align-items-center column-gap-3 justify-content-between flex-lg-column flex-lg-nowrap align-items-lg-start">
                <div class="text-reset fw-bold text-uppercase mb-3 flex-lg-grow-1 opacity-50">
-                  <img src="../assets/images/template2/logo-indraco-light.png" alt="INDRACO Logo" loading="lazy" class="w-100 img-fluid" style="max-width: 17em;">
+                  <img src="../assets/img/logo-indraco-light.png" alt="INDRACO Logo" loading="lazy" class="w-100 img-fluid" style="max-width: 17em;">
                   <br><small class="small text-capitalize">Roasting Fine Exquisite Coffee Since 1971</small>
                </div>
                <nav aria-label="Social media navigation" class="d-flex flex-wrap gap-3 mb-3">
