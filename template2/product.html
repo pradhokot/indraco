@@ -9,32 +9,267 @@
    <link rel="stylesheet" href="../assets/vendors/fontawesome-free-6.7.2-web/css/all.min.css">
    <link rel="stylesheet" href="../assets/fonts/HelveticaNeue/HelveticaNeue.css">
    <link rel="stylesheet" href="css/theme.css">
+   <link rel="stylesheet" href="css/custom.css">
    <link rel="stylesheet" href="css/frontend.css">
+   <!-- <style>*{outline: solid 1px green;}</style> -->
 </head>
 <body>
-   <h1 class="visually-hidden">INDRACO</h1>
+   <h1 class="visually-hidden">INDRACO/products page</h1>
    <script src="component/header.js"></script>
    <script src="component/aside.js"></script>
    <main>
-      <section class="hero-banner vh-100">
-         <h2 class="visually-hidden">Section hero banner</h2>
-         <div class="banner-caption">
-            <p class="display-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <section class="hero-banner">
+         <h2 class="visually-hidden">section produk banner</h2>
+         <div id="carousel-banner" class="carousel slide carousel-fade" data-bs-ride="carousel data-bs-pause="false">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="0" class="bg-white active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="1" class="bg-white" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carousel-banner" data-bs-slide-to="2" class="bg-white" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container w-100 py-5">
+                     <div class="row row-gap-4 justify-content-center justify-content-lg-around align-items-lg-center gx-lg-5 py-5">
+                        <div class="col col-10 col-sm-8 col-lg-5 order-lg-2">
+                           <img src="../assets/images/template2/product-banner-image.png" alt="" loading="lazy" class="w-100 img-fluid">
+                        </div>
+                        <div class="col col-12 col-lg-6 col-xl-5 order-lg-1 text-light">
+                           <p class="display-5 fw-bold">Supresso-Crafted Boldly in Indonesia</p>
+                           <p class="lead">Premium Coffee, Experience, Born from Indonesian Soil.</p>
+                           <a href="#" class="btn btn-primary rounded-0">Beli Sekarang</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container w-100 py-5">
+                     <div class="row row-gap-4 justify-content-center justify-content-lg-around align-items-lg-center gx-lg-5 py-5">
+                        <div class="col col-10 col-sm-8 col-lg-5 order-lg-2">
+                           <img src="../assets/images/template2/product-banner-image.png" alt="" loading="lazy" class="w-100 img-fluid">
+                        </div>
+                        <div class="col col-12 col-lg-6 col-xl-5 order-lg-1 text-light">
+                           <p class="display-5 fw-bold">Supresso-Crafted Boldly in Indonesia</p>
+                           <p class="lead">Premium Coffee, Experience, Born from Indonesian Soil.</p>
+                           <a href="#" class="btn btn-primary rounded-0">Beli Sekarang</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container w-100 py-5">
+                     <div class="row row-gap-4 justify-content-center justify-content-lg-around align-items-lg-center gx-lg-5 py-5">
+                        <div class="col col-10 col-sm-8 col-lg-5 order-lg-2">
+                           <img src="../assets/images/template2/product-banner-image.png" alt="" loading="lazy" class="w-100 img-fluid">
+                        </div>
+                        <div class="col col-12 col-lg-6 col-xl-5 order-lg-1 text-light">
+                           <p class="display-5 fw-bold">Supresso-Crafted Boldly in Indonesia</p>
+                           <p class="lead">Premium Coffee, Experience, Born from Indonesian Soil.</p>
+                           <a href="#" class="btn btn-primary rounded-0">Beli Sekarang</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-banner" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon filter-none" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-banner" data-bs-slide="next">
+               <span class="carousel-control-next-icon filter-none" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+            </button>
          </div>
       </section>
-      <section>
-         <div class="container">
-            <h2 class="visually-hidden">section about us</h2>
-            <p>
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aut molestias nostrum nemo. Laudantium, tempore iure, odio molestias dignissimos explicabo repellendus culpa necessitatibus quae itaque distinctio modi, repudiandae quod ex?
+      
+      <section class="py-5">
+         <div class="container py-lg-5">
+            <h2 class="visually-hidden">section product list</h2>
+            <p class="fs-1 fw-bold mb-5 text-center mx-auto">
+               Produk Kami
             </p>
+            <nav aria-label="product navigation" class="group-card product-list gap-5 pt-5">
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-supresso.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">Supresso</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-balicafe.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">BaliCafé</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-ucafe.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">UCAFÉ</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-rasa-sayang.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">Rasa Sayang</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-tugu-buaya.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">Tugu Buaya</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-uang-emas.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">Uang Emas</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-brochoco.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">BROCHOCO</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-jaheku.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">Jaheku</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-intirasa.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">IntiRasa</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="text-reset text-decoration-none">
+                  <div class="card bg-transparent p-0">
+                     <div class="ratio ratio-16x9 w-75    mx-auto">
+                        <img src="../assets/images/template2/logo-haocafe.png" alt="Supresso Logo" loading="lazy" class="object-fit-contain top-50 start-50 translate-middle">
+                     </div>
+                     <div class="card-body">
+                        <h3 class="fw-bold fs-5 text-uppercase">HaoCafe</h3>
+                        <p class="text-justify small">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus esse libero voluptates officiis quos minus odio nam tenetur, totam accusamus accusantium modi sunt culpa magni impedit earum dignissimos, blanditiis cumque?
+                        </p>
+                     </div>
+                  </div>
+               </a>
+            </nav>
          </div>
       </section>
+      
+      <section class="py-5 text-bg-primary text-center">
+         <div class="container py-lg-5">
+            <h2 class="visually-hidden">section store</h2>
+            <p class="fs-1 fw-bold mb-5 text-center mx-auto">
+               Pesan Produk Kami
+            </p>
+            <div class="mb-5">
+               <h3 class="visually-hidden">official stere</h3>
+               <p class="small mb-2">Website INDRACOSTORE</p>
+               <a href="#" target="_blank" class="text-reset text-decoration-none">
+                  <img src="../assets/images/template2/logo-indracostore-invert.png" alt="" loading="lazy" class="w-100 img-fluid" style="max-width: 18rem;">
+               </a>
+            </div>
+            <div>
+               <h3 class="visually-hidden">marketplace</h3>
+               <p class="small mb-2">Tersedia juga di :</p>
+               <nav aria-label="marketplace navigation" class="d-flex flex-wrap justify-content-center align-items-center gap-4 column-gap-5">
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="../assets/images/template2/logo-tokopedia.png" alt="marketplace tokopedia" loading="lazy" class="w-100 img-fluid" style="max-width: 140px;">
+                  </a>
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="../assets/images/template2/logo-shopee.png" alt="marketplace shopee" loading="lazy" class="w-100 img-fluid" style="max-width: 45px;">
+                  </a>
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="../assets/images/template2/logo-blibli.png" alt="marketplace blibli" loading="lazy" class="w-100 img-fluid" style="max-width: 120px;">
+                  </a>
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="../assets/images/template2/logo-lazada.png" alt="marketplace lazada" loading="lazy" class="w-100 img-fluid" style="max-width: 70px;">
+                  </a>
+                  <a href="#" class="text-reset text-decoration-none">
+                     <img src="../assets/images/template2/logo-tiktokshop.png" alt="marketplace tiktokshop" loading="lazy" class="w-100 img-fluid" style="max-width: 150px;">
+                  </a>
+               </nav>
+            </div>
+         </div>
+      </section>
+
    </main>
    <script src="component/footer.js"></script>
    <script src="../assets/vendors/jquery-3.7.1.min.js"></script>
    <script src="../assets/vendors/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
    <script src="js/theme.js"></script>
    <script src="js/frontend.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('nav[aria-label="Primary navigation (mobile)"]>ul>li:nth-child(2)>a, nav[aria-label="Primary navigation (mobile)"]>ul>li:nth-of-type(2)>a, nav[aria-label="Primary navigation (desktop)"]>ul>li:nth-child(2)>a, nav[aria-label="Primary navigation (desktop)"]>ul>li:nth-of-type(2)>a').addClass('active');
+      })
+   </script>
 </body>
 </html>

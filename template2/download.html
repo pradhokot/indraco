@@ -9,32 +9,103 @@
    <link rel="stylesheet" href="../assets/vendors/fontawesome-free-6.7.2-web/css/all.min.css">
    <link rel="stylesheet" href="../assets/fonts/HelveticaNeue/HelveticaNeue.css">
    <link rel="stylesheet" href="css/theme.css">
+   <link rel="stylesheet" href="css/custom.css">
    <link rel="stylesheet" href="css/frontend.css">
+   <!-- <style>*{outline: solid 1px green;}</style> -->
 </head>
 <body>
-   <h1 class="visually-hidden">INDRACO</h1>
+   <h1 class="visually-hidden">INDRACO/download page</h1>
    <script src="component/header.js"></script>
    <script src="component/aside.js"></script>
    <main>
-      <section class="hero-banner vh-100">
-         <h2 class="visually-hidden">Section hero banner</h2>
-         <div class="banner-caption">
-            <p class="display-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      
+      <section class="py-5">
+         <h2 class="visually-hidden">section browchures download</h2>
+         <div class="container py-lg-5">
+            <h3 class="fs-3 fw-bold mb-5 text-center mx-auto" style="max-width: 15em;">
+               Cari Tahu Lebih Melalui Profil Perusahaan dan Brosur
+            </h3>
+            <div class="group-card gap-md-4 gap-xl-5 pt-lg-5" style="grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));">
+               
+               <article class="card p-0 bg-transparent d-grid align-items-center grid-cols-2">
+                  <div class="ratio ratio-1x1">
+                     <img src="../assets/images/template2/brosur-supresso.png" alt="" loading="lazy" class="object-fit-contain">
+                  </div>
+                  <div class="card-body">
+                     <h4 class="card-title fs-4 fw-bold">Profil Perusahaan</h4>
+                     <p class="card-text opacity-75">Produk & Spesifikasi</p>
+                     <a href="#" class="btn rounded-0 border fw-medium">
+                        <i class="fas fa-download me-2"></i> Unduh
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card p-0 bg-transparent d-grid align-items-center grid-cols-2">
+                  <div class="ratio ratio-1x1">
+                     <img src="../assets/images/template2/brosur-supresso.png" alt="" loading="lazy" class="object-fit-contain">
+                  </div>
+                  <div class="card-body">
+                     <h4 class="card-title fs-4 fw-bold">Profil Perusahaan</h4>
+                     <p class="card-text opacity-75">Produk & Spesifikasi</p>
+                     <a href="#" class="btn rounded-0 border fw-medium">
+                        <i class="fas fa-download me-2"></i> Unduh
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card p-0 bg-transparent d-grid align-items-center grid-cols-2">
+                  <div class="ratio ratio-1x1">
+                     <img src="../assets/images/template2/brosur-supresso.png" alt="" loading="lazy" class="object-fit-contain">
+                  </div>
+                  <div class="card-body">
+                     <h4 class="card-title fs-4 fw-bold">Profil Perusahaan</h4>
+                     <p class="card-text opacity-75">Produk & Spesifikasi</p>
+                     <a href="#" class="btn rounded-0 border fw-medium">
+                        <i class="fas fa-download me-2"></i> Unduh
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card p-0 bg-transparent d-grid align-items-center grid-cols-2">
+                  <div class="ratio ratio-1x1">
+                     <img src="../assets/images/template2/brosur-supresso.png" alt="" loading="lazy" class="object-fit-contain">
+                  </div>
+                  <div class="card-body">
+                     <h4 class="card-title fs-4 fw-bold">Profil Perusahaan</h4>
+                     <p class="card-text opacity-75">Produk & Spesifikasi</p>
+                     <a href="#" class="btn rounded-0 border fw-medium">
+                        <i class="fas fa-download me-2"></i> Unduh
+                     </a>
+                  </div>
+               </article>
+
+               <article class="card p-0 bg-transparent d-grid align-items-center grid-cols-2">
+                  <div class="ratio ratio-1x1">
+                     <img src="../assets/images/template2/brosur-supresso.png" alt="" loading="lazy" class="object-fit-contain">
+                  </div>
+                  <div class="card-body">
+                     <h4 class="card-title fs-4 fw-bold">Profil Perusahaan</h4>
+                     <p class="card-text opacity-75">Produk & Spesifikasi</p>
+                     <a href="#" class="btn rounded-0 border fw-medium">
+                        <i class="fas fa-download me-2"></i> Unduh
+                     </a>
+                  </div>
+               </article>
+
+            </div>
          </div>
       </section>
-      <section>
-         <div class="container">
-            <h2 class="visually-hidden">section about us</h2>
-            <p>
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aut molestias nostrum nemo. Laudantium, tempore iure, odio molestias dignissimos explicabo repellendus culpa necessitatibus quae itaque distinctio modi, repudiandae quod ex?
-            </p>
-         </div>
-      </section>
+
    </main>
    <script src="component/footer.js"></script>
    <script src="../assets/vendors/jquery-3.7.1.min.js"></script>
    <script src="../assets/vendors/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
    <script src="js/theme.js"></script>
    <script src="js/frontend.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('nav[aria-label="Primary navigation (mobile)"]>ul>li:nth-child(3)>a, nav[aria-label="Primary navigation (mobile)"]>ul>li:nth-of-type(3)>a, nav[aria-label="Primary navigation (desktop)"]>ul>li:nth-child(3)>a, nav[aria-label="Primary navigation (desktop)"]>ul>li:nth-of-type(3)>a').addClass('active');
+      })
+   </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 document.writeln(`
-   <header class="sticky-top">
-      <nav aria-label="Main navigation" class="navbar navbar-expand-lg bg-body d-block py-3 py-lg-4">
+   <header class="sticky-top border-bottom">
+      <nav aria-label="Main navigation" class="navbar navbar-expand-lg d-block py-3 py-lg-4">
          <div class="navbar-mobile d-block d-lg-none">
             <div class="container d-grid align-items-center gap-3" style="grid-template-columns: auto 1fr;">
                <div>

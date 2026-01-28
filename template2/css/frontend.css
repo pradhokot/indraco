@@ -5,6 +5,7 @@
    --banner-bg: #999999;
    --card-bg: #e6e7e8;
    --card-color: #262626;
+   --navbar-bg: #f1f1f1;
 }
 
 [data-bs-theme=dark] {
@@ -14,6 +15,7 @@
    --banner-bg: #404041;
    --card-bg: #333333;
    --card-color: #e6e7e8;
+   --navbar-bg: #1a1a1a;
 }
 
 .btn-primary {
@@ -42,6 +44,16 @@
    padding: 1.5rem;
 }
 
+.active {font-weight: bold !important;}
+
+.inset-article {
+   background-image: linear-gradient(to top, var(--bs-body-bg), transparent);
+}
+
+nav[aria-label="Main navigation"] {
+   background-color: var(--navbar-bg);
+}
+
 
 
 
@@ -59,7 +71,7 @@ body>footer {
    color: white;
 }
 
-body>footer .copyright {background-color: #111111;}
+body>footer .copyright {background-color: #1a1a1a;}
 
 nav[aria-label="Social media navigation"]>a {
    width: 32px;

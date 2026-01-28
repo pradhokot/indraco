@@ -33,7 +33,7 @@ document.writeln(`
                <address>
                   <a href="https://maps.app.goo.gl/QFxLopT45ZBAvngk6" target="_blank" class="link-hover-underline">Jl. Semeru No. 133-135 Bambe, Kec. Driyorejo. Gresik 61177 Jawa Timur - Indonesia</a>
                   <br><br>
-                  <b>T</b>. <a href="+62317668777,7667388" target="_blank" class="link-hover-underline">+62 31 766 8777</a>, <a href="+62317667388" target="_blank" class="link-hover-underline">766 7388</a>
+                  <b>T</b>. <a href="tel:+62317668777" target="_blank" class="link-hover-underline">+62 31 766 8777</a>, <a href="tel:+62317667388" target="_blank" class="link-hover-underline">766 7388</a>
                   <br>
                   <b>F</b>. <a href="fax:+62317669590" target="_blank" class="link-hover-underline">+62 31 766 9590</a>
                   <br>
@@ -53,7 +53,6 @@ document.writeln(`
                   <li><a href="#" class="link-hover-underline"><i class="fas fa-chevron-right fs-sm"></i> Jaheku</a></li>
                   <li><a href="#" class="link-hover-underline"><i class="fas fa-chevron-right fs-sm"></i> IntiRasa</a></li>
                   <li><a href="#" class="link-hover-underline"><i class="fas fa-chevron-right fs-sm"></i> HaoCafe</a></li>
-                  <li><a href="#" class="link-hover-underline"><i class="fas fa-chevron-right fs-sm"></i> Ceria</a></li>
                </ul>
             </div>
          </div>
