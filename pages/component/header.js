@@ -5,7 +5,7 @@ document.writeln(`
             <div class="container d-grid align-items-center gap-3" style="grid-template-columns: auto 1fr;">
                <div>
                   <a href="index.html" class="navbar-brand d-flex">
-                     <img src="../assets/images/template2/logo-indraco.png" data-light="../assets/images/template2/logo-indraco.png" data-dark="../assets/images/template2/logo-indraco-invert.png" alt="INDRACO Logo" class="w-100 img-fluid theme-image" style="max-width: 10rem;">
+                     <img src="../assets/img/logo-indraco.png" data-light="../assets/img/logo-indraco.png" data-dark="../assets/img/logo-indraco-invert.png" alt="INDRACO Logo" class="w-100 img-fluid theme-image" style="max-width: 10rem;">
                   </a>
                </div>
                <div class="d-flex align-items-center gap-3">
@@ -61,7 +61,7 @@ document.writeln(`
             <div class="container d-grid align-items-center gap-3" style="grid-template-columns: 1fr auto 1fr;">
                <div class="d-flex">
                   <a href="index.html" class="navbar-brand d-flex">
-                     <img src="../assets/images/template2/logo-indraco.png" data-light="../assets/images/template2/logo-indraco.png" data-dark="../assets/images/template2/logo-indraco-invert.png" alt="INDRACO Logo" class="w-100 img-fluid theme-image" style="max-width: 12rem;">
+                     <img src="../assets/img/logo-indraco.png" data-light="../assets/img/logo-indraco.png" data-dark="../assets/img/logo-indraco-invert.png" alt="INDRACO Logo" class="w-100 img-fluid theme-image" style="max-width: 12rem;">
                   </a>
                </div>
                <div>

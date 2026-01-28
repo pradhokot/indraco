@@ -1,7 +1,7 @@
 document.writeln(`
    <article class="card p-0">
       <div class="ratio ratio-16x9 w-100">
-         <img src="../assets/images/template2/gallery.jpg" alt="" loading="lazy" class="w-100 img-fluid z-0">
+         <img src="../assets/img/gallery.jpg" alt="" loading="lazy" class="w-100 img-fluid z-0">
          <div class="z-1 inset-0 inset-article"></div>
          <div class="z-2 top-unset bottom-0 h-auto p-3">
             <h3 class="text-reset fw-bold line-clamp-3 mb-0">
