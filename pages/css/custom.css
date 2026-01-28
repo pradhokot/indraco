@@ -1,3 +1,7 @@
+*::placeholder {
+   color: currentColor !important;
+}
+
 .last-item-none>*:last-child, .last-item-none>*:last-of-type {display: none;}
 
 .line-clamp-3 {
