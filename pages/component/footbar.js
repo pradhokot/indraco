@@ -5,7 +5,7 @@ document.writeln(`
          <div class="col col-12 col-lg-auto order-lg-1">
             <div class="d-flex flex-wrap align-items-center flex-lg-column">
                <div class="me-auto">
-                  <img src="../assets/images/template1/logo-indraco-dark.png" width="100%" height="auto" alt="" style="max-width: 12.75rem;">
+                  <img src="../assets/img/logo-indraco-dark.png" width="100%" height="auto" alt="" style="max-width: 12.75rem;">
                   <p class="lh-1">
                      <small><small>Roasting Fine Exquisite Coffee Since 1971</small></small>
                   </p>

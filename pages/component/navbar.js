@@ -10,8 +10,8 @@ document.writeln(`
          <div class="navtop-center">
             <h1 class="navbrand fs-reset m-0 lh-base">
                <a href="index.html" class="text-decoration-none text-reset d-flex">
-                  <img src="../assets/images/template1/logo-indraco.png" class="img-default" width="100%" height="auto" alt="">
-                  <img src="../assets/images/template1/logo-indraco-invert.png" class="img-invert" width="100%" height="auto" alt="">
+                  <img src="../assets/img/logo-indraco.png" class="img-default" width="100%" height="auto" alt="">
+                  <img src="../assets/img/logo-indraco-invert.png" class="img-invert" width="100%" height="auto" alt="">
                </a>
             </h1>
          </div>

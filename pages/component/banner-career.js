@@ -18,7 +18,7 @@ document.writeln(`
                </div>
             </div><!-- end col -->
             <div class="col col-12 col-lg-7">
-               <img src="../assets/images/template1/career-banner.png" width="100%" height="auto" alt="">
+               <img src="../assets/img/career-banner.png" width="100%" height="auto" alt="">
             </div><!-- end col -->
          </div><!-- end row -->
       </div><!-- end banner career -->

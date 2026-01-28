@@ -2,7 +2,7 @@ document.writeln(`
 <div class="row flex-nowrap gx-3">
    <div class="col col-2 col-md-3 col-lg-4">
       <div class="ratio img-ratio ratio-1x1 rounded-2 overflow-hidden bg-light">
-         <img src="../assets/images/template1/events-POSTER-CIIE.jpg" class="object-fit-cover" alt="">
+         <img src="../assets/img/events-POSTER-CIIE.jpg" class="object-fit-cover" alt="">
       </div>
    </div><!-- end col -->
    <div class="col col-10 col-md-9 col-lg-8">

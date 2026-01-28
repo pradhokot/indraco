@@ -3,7 +3,7 @@ document.writeln(`
    <div class="card card-product rounded-0 border-0">
       <div class="card-header p-0 border-0">
          <div class="ratio ratio-1x1 img-ratio">
-            <img src="../assets/images/template1/product-sumatra-mandheling-coffee-beans.png" class="object-fit-cover bg-white" alt="...">
+            <img src="../assets/img/product-sumatra-mandheling-coffee-beans.png" class="object-fit-cover bg-white" alt="...">
          </div>
       </div>
       <div class="card-body text-center pt-0">
